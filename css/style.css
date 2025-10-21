@@ -19,6 +19,7 @@
 
 
 
+/* GENERAL */
 
 * {
     margin: 0px;
@@ -26,6 +27,15 @@
     font-family: 'Inter Tight', sans-serif;
 }
 
+img{
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+
+
+/* HEADER HOME  */
 
 header {
     background-color: var(--primary-color);
