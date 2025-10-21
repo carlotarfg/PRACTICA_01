@@ -1,0 +1,92 @@
+/* VARIABLES CSS */
+
+:root {
+    --primary-color: #1D1D1B;
+    --second-color: #ffffff;
+    --third-color: #4F5DFF;
+    --font-size: 18px;
+    --font-primary: 'Inter Tight', sans-serif;
+    --font-secondary: 'Grafiti'; 
+}
+
+.inter-tight {
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+
+header {
+    background-color: var(--primary-color);
+    color: var(--second-color);
+    margin: 0px;
+    padding: 0px;
+    height: 68rem;
+
+}
+
+.header_up {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 25.5rem;
+
+}
+
+
+.menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    margin-right: 4.5rem;
+    margin-top: 4rem;
+    font-weight: 300;
+    gap: 6rem;
+    font-size: 1.8rem;
+
+}
+
+.menu > li > a {
+    color: var(--second-color);
+    text-decoration: none;
+
+}
+
+.logo {
+    margin: -2rem 0rem 0rem 2rem;
+    width: 45rem;
+
+}
+
+.text_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.texth_1 {
+    font-size: 1.7rem;
+    width: 20rem;
+    font-weight: 400;
+    margin-left: 4rem;
+}
+
+.prueba {
+    margin-right: 3.5rem;
+    width: 70rem;
+}
+
+
