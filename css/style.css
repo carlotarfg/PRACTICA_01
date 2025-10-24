@@ -217,7 +217,7 @@ header {
     line-height: 1;
     letter-spacing: -2px;
     text-align: center;
-    margin: 32rem 25rem 25rem 35rem;
+    margin: 32rem 25rem 27rem 42rem;
   
 }
 
@@ -227,7 +227,7 @@ header {
 
 .video_scroll {
   width: 70%;
-  margin-left: 16rem;
+  margin-left: 19rem;
   margin-bottom: 20rem;
 }
 
@@ -296,8 +296,116 @@ header {
 .text-b {
     font-size: 9rem;
     width: 60%;
-    margin: 4rem 0rem 3rem 49.5rem;
+    margin: 4rem 0rem 3rem 64rem;
     line-height: 0.8;
     letter-spacing: -2px;
     font-weight: 500;
+}
+
+/* ABOUT US  */
+
+#about_us {
+  position: relative;
+  height: 100rem;
+}
+
+.title_about_us {
+  display: flex;
+  flex-direction: row;
+  font-weight: 500;
+  letter-spacing: -2px;
+  font-size: 5rem;
+  margin: 8rem 0rem 0rem 13rem;
+}
+
+
+.about_us_arrow img {
+    width: 4.5rem;
+    margin-left: 2rem;  
+     margin-top: -0.8rem;
+}
+
+
+#about_us .logo_fondo {
+    position: absolute;
+    overflow: hidden;
+    top: 23rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: 0;             
+}
+
+.text_about_us{
+  position: relative;      
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 13rem;
+
+}
+
+.text_about_us p {
+    font-family: "Inter Tight", sans-serif;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    font-size: 2.5rem;
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.text_about_us p:first-child {
+    margin-left: 21rem;
+    margin-top: 9rem;
+    width: 21%;
+    font-weight: 400;
+
+}
+
+.text_about_us p:nth-child(2) {
+   margin-left: 48rem;
+    margin-top: 30rem;
+    width: 20%;
+}
+
+.text_about_us p:last-child {
+    margin-left: 18rem;
+    margin-top: 36rem;
+    width: 26%;
+    font-weight: 400;
+
+}
+
+.vertical1 {
+   width: 0.2rem;
+    top: 10rem;
+    left: 34rem;
+    height: 82px;
+    background-color: black;
+    border: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.vertical2 {
+    width: 0.2rem;
+    top: 34rem;
+    left: 34rem;
+    height: 1560px;
+    background-color: black;
+    border: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.vertical3 {
+   width: 0.2rem;
+    top: 143rem;
+    left: 34rem;
+    height: 82px;
+    background-color: black;
+    border: none;
+    position: absolute;
+    z-index: 1;
 }
