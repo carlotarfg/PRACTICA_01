@@ -231,6 +231,9 @@ header {
   margin-bottom: 20rem;
 }
 
+
+/* GRID STATS  */
+
 .stat-card {
   border-radius: 5px;        
   padding: 2.5rem;
@@ -243,7 +246,7 @@ header {
 }
 
 .stat-title {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin-bottom: 0.5rem;
   margin-top: 1.5rem;
   opacity: 0.85;
@@ -276,4 +279,25 @@ header {
     font-weight: 200;
     margin-left: 0.5rem;
 
+}
+
+.container-fluid {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* --------  */
+
+.text-b {
+    font-size: 9rem;
+    width: 60%;
+    margin: 4rem 0rem 3rem 49.5rem;
+    line-height: 0.8;
+    letter-spacing: -2px;
+    font-weight: 500;
 }
