@@ -1,0 +1,80 @@
+/* VARIABLES CSS */
+
+:root {
+    --primary-color: #1D1D1B;
+    --second-color: #ffffff;
+    --third-color: #4F5DFF;
+    --font-size: 18px;
+    --font-primary: 'Inter Tight', sans-serif;
+    --font-secondary: 'Grafiti'; 
+}
+
+.inter-tight {
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+
+
+/* GENERAL */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter Tight', sans-serif;
+    max-width: 100%;    
+}
+
+
+html, body {
+    max-width: 100%;    
+    overflow-x: hidden;
+
+    margin: 0px;
+    padding: 0px;
+    height: 68rem;
+    max-width: 100%;    
+}
+
+img{
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* ------------------------------------ */
+
+/* MARQUESINA */
+.marquework {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.marquework .wrapper {
+  display: flex;
+  align-items: center;
+  animation: marquework 9s linear infinite;
+  width: max-content; 
+}
+
+.marquework h1 {
+color: var(--second-color);
+  font-size: 7rem;
+  font-weight: 400;
+  white-space: nowrap;
+  letter-spacing: -2px;
+  padding: 0 2.5%;
+}
+
+@keyframes marquework {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
