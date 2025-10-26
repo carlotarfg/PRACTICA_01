@@ -409,3 +409,108 @@ header {
     position: absolute;
     z-index: 1;
 }
+
+/* WORK WITH US  */
+
+
+#work_with_us {
+  background-color: var(--primary-color);
+  margin-top: 60rem;
+  color: var(--second-color);
+}
+
+.title_work {
+  display: flex;
+  flex-direction: row;
+  font-weight: 500;
+  letter-spacing: -2px;
+  font-size: 5rem;
+  margin: 8rem 0rem 0rem 13rem;
+}
+
+
+.work_arrow img {
+    width: 4.5rem;
+    margin-left: 2rem;  
+    margin-top: -0.8rem;
+    filter: invert(1);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* .contact-section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #111;
+}
+
+.container {
+  width: 85%;
+  max-width: 900px;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.contact-form label {
+  display: block;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+.contact-form input {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+  font-size: 1rem;
+  padding: 0.3rem 0;
+  margin-top: 0.3rem;
+  outline: none;
+}
+
+.contact-form input::placeholder {
+  color: #aaa;
+  font-size: 0.9rem;
+  text-transform: none;
+}
+
+.send-btn {
+  align-self: flex-end;
+  background: white;
+  color: black;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.send-btn:hover {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+} */
