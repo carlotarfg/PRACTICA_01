@@ -32,6 +32,7 @@
 html, body {
     max-width: 100%;    
     overflow-x: hidden;
+
 }
 
 img{
@@ -666,7 +667,95 @@ header {
 }
 
 
+/* IMG  */
 
+#foot {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4rem;
+  margin-top: -5rem;
+  box-sizing: border-box;
+}
+
+#foot .img_footer {
+    position: absolute;
+    inset: 0;
+    width: 99%;
+    margin-left: 1.5rem;
+    height: 100%;
+    z-index: 0;
+}
+
+#foot .top,
+#foot .text_middle,
+#foot .text_bottom {
+  position: relative;
+  z-index: 1;
+}
+
+.text_top {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.text_top1 p,
+.text_top2 p,
+.text_top3 p {
+  margin: 0;
+}
+
+/* LET'S TALK */
+.icon_top {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 600;
+  margin-top: 26rem;
+  margin-bottom: -2rem;
+}
+
+
+.icon_top p {
+  margin-top: 0;
+  font-size: 9rem;
+}
+
+.icon_top img {
+    width: 8rem;
+    margin-top: -0.8rem;
+}
+
+.text_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  border-top: 3px solid rgba(255,255,255,0.6);
+}
+
+.text_bottom ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+#foot bold {
+  font-weight: 800;
+}
 
 
 
