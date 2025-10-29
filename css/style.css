@@ -98,14 +98,47 @@ header {
 
 .text_header {
     display: flex;
+    margin-top: 6rem;
+    gap: 26rem;
+    line-height: 0.8;
+    margin-bottom: 0rem;
     flex-direction: row;
-    justify-content: space-between;
     align-items: flex-end;
 }
 
-.texth_1 {
+.texth_1 p {
     font-size: 1.7rem;
+    line-height: 1;
     width: 20rem;
+    font-weight: 400;
+    margin-left: 2rem;
+}
+
+.texth_2 b {
+  font-weight: 500; 
+}
+
+.texth-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-img {
+    width: 7%;
+    filter: invert(1);
+}
+
+.texth_2 p:first-child {
+  margin-left: 11rem;
+}
+
+.texth_2 p:last-child {
+  margin-left: 36rem;
+}
+
+.texth_2 p {
+    font-size: 7rem;
+    width: 70rem;
     font-weight: 400;
     margin-left: 2rem;
 }
@@ -206,34 +239,61 @@ header {
 
 
 .allwork img {
-    width: 4.5rem;
+    width: 5.5rem;
     margin-left: 2rem;  
      margin-top: -0.8rem;
 }
 
 
+.title_know {
+  
+  display: flex;
+  flex-direction: row;
+  font-weight: 500;
+  letter-spacing: -2px;
+  font-size: 6rem;
+  margin: 8rem 0rem 0rem 0rem;
+}
+
+
 /* TEXTO  */
 
-.text {
+.text1 {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
     width: 35%;
     line-height: 1;
     letter-spacing: -2px;
     text-align: center;
-    margin: 32rem 25rem 27rem 42rem;
+    margin: 32rem 25rem 16rem 42rem;
   
 }
 
-.text > p {
-  font-size: 4rem;
+.text {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    line-height: 1;
+    letter-spacing: -2px;
+    text-align: center;
+    margin: 0rem 25rem 36rem 42rem;
+  
 }
 
-.video_scroll {
+.text1 > p,
+.text > p {
+  font-size: 4rem;
+  margin-bottom: 0rem;
+  opacity: 0.2; 
+  transition: opacity 0.4s ease;
+}
+
+.video_lola  video {
   width: 70%;
   margin-left: 19rem;
   margin-bottom: 20rem;
+  transition: transform 0.2s ease-out;
+  transform-origin: center center;
 }
 
 
@@ -357,7 +417,9 @@ header {
     letter-spacing: -1px;
     font-size: 2.5rem;
     margin-top: 6rem;
-    text-align: center;
+    text-align: center; 
+    opacity: 0.2;
+    transition: opacity 0.4s ease;
 }
 
 .text_about_us p:first-child {
@@ -387,6 +449,7 @@ header {
     top: 10rem;
     left: 34rem;
     height: 82px;
+    opacity: 0.2;
     background-color: black;
     border: none;
     position: absolute;
@@ -397,6 +460,7 @@ header {
     width: 0.2rem;
     top: 34rem;
     left: 34rem;
+    opacity: 0.2;
     height: 1560px;
     background-color: black;
     border: none;
@@ -408,6 +472,7 @@ header {
    width: 0.2rem;
     top: 143rem;
     left: 34rem;
+    opacity: 0.2;
     height: 82px;
     background-color: black;
     border: none;
@@ -671,92 +736,6 @@ header {
 }
 
 
-/* IMG  */
-
-/* #foot {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 4rem;
-  margin-top: -5rem;
-  box-sizing: border-box;
-}
-
-#foot .img_footer {
-    position: absolute;
-    inset: 0;
-    width: 99%;
-    margin-left: 1.5rem;
-    height: 100%;
-    z-index: 0;
-}
-
-#foot .top,
-#foot .text_middle,
-#foot .text_bottom {
-  position: relative;
-  z-index: 1;
-}
-
-.text_top {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  font-size: 4rem;
-  font-weight: 600;
-  line-height: 1;
-}
-
-.text_top1 p,
-.text_top2 p,
-.text_top3 p {
-  margin: 0;
-}
-
-.icon_top {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  font-weight: 600;
-  margin-top: 26rem;
-  margin-bottom: -2rem;
-}
-
-
-.icon_top p {
-  margin-top: 0;
-  font-size: 9rem;
-}
-
-.icon_top img {
-    width: 8rem;
-    margin-top: -0.8rem;
-}
-
-.text_bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  flex-wrap: wrap;
-  padding-top: 1rem;
-  font-size: 1.2rem;
-  border-top: 3px solid rgba(255,255,255,0.6);
-}
-
-.text_bottom ul {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
-} */
-
-
 
 #foot {
   position: relative;
@@ -780,6 +759,10 @@ header {
     margin-left: 2rem;
     height: 100%;
     z-index: 0;
+}
+
+.text_top b {
+  font-weight: 500; 
 }
 
 #foot .top,
