@@ -92,14 +92,14 @@ header {
 .logo {
     margin: -2rem 0rem 0rem 2rem;
     width: 100%;
-    max-width: 45rem;
+    max-width: 35rem;
 
 }
 
 .text_header {
     display: flex;
-    margin-top: 6rem;
-    gap: 26rem;
+    margin-top: 1rem;
+    gap: 31rem;
     line-height: 0.8;
     margin-bottom: 0rem;
     flex-direction: row;
@@ -137,7 +137,7 @@ header {
 }
 
 .texth_2 p {
-    font-size: 7rem;
+    font-size: 6rem;
     width: 70rem;
     font-weight: 400;
     margin-left: 2rem;
@@ -176,7 +176,7 @@ header {
 .marquework h1 {
   color: #1d1d1b2b;
   font-size: 7rem;
-  font-weight: 400;
+  font-weight: 300;
   white-space: nowrap;
   letter-spacing: -2px;
   padding: 0 2.5%;
@@ -265,7 +265,7 @@ header {
     line-height: 1;
     letter-spacing: -2px;
     text-align: center;
-    margin: 32rem 25rem 16rem 42rem;
+    margin: 22rem 25rem 15rem 39rem;
   
 }
 
@@ -276,21 +276,21 @@ header {
     line-height: 1;
     letter-spacing: -2px;
     text-align: center;
-    margin: 0rem 25rem 36rem 42rem;
+    margin: 0rem 25rem 27rem 39rem;
   
 }
 
 .text1 > p,
 .text > p {
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 0rem;
   opacity: 0.2; 
   transition: opacity 0.4s ease;
 }
 
 .video_lola  video {
-  width: 70%;
-  margin-left: 19rem;
+  width: 55%;
+  margin-left: 26rem;
   margin-bottom: 20rem;
   transition: transform 0.2s ease-out;
   transform-origin: center center;
@@ -308,6 +308,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 4rem;
 }
 
 .stat-title {
@@ -322,9 +323,9 @@ header {
 }
 
 .stat-number {
-    font-size: 16.5rem;
+    font-size: 10rem;
     font-weight: 500;
-    letter-spacing: -17px;
+    letter-spacing: -6px;
     margin: 0;
     line-height: 1;
 }
@@ -349,6 +350,8 @@ header {
 .container-fluid {
   padding-left: 1rem !important;
   padding-right: 1rem !important;
+  margin-top: 2rem;
+  width: 92%;
 }
 
 .row {
@@ -359,9 +362,9 @@ header {
 /* --------  */
 
 .text-b {
-    font-size: 9rem;
+    font-size: 8rem;
     width: 60%;
-    margin: 4rem 0rem 3rem 64rem;
+    margin: 4rem 0rem 3rem 70rem;
     line-height: 0.8;
     letter-spacing: -2px;
     font-weight: 500;
@@ -415,7 +418,7 @@ header {
     font-family: "Inter Tight", sans-serif;
     line-height: 1.2;
     letter-spacing: -1px;
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-top: 6rem;
     text-align: center; 
     opacity: 0.2;
@@ -423,9 +426,9 @@ header {
 }
 
 .text_about_us p:first-child {
-    margin-left: 21rem;
-    margin-top: 9rem;
-    width: 21%;
+    margin-left: 24rem;
+    margin-top: 11rem;
+    width: 17%;
     font-weight: 400;
 
 }
@@ -433,13 +436,13 @@ header {
 .text_about_us p:nth-child(2) {
    margin-left: 48rem;
     margin-top: 30rem;
-    width: 20%;
+    width: 19%;
 }
 
 .text_about_us p:last-child {
-    margin-left: 18rem;
-    margin-top: 36rem;
-    width: 26%;
+    margin-left: 21rem;
+    margin-top: 39rem;
+    width: 20%;
     font-weight: 400;
 
 }
@@ -495,14 +498,14 @@ header {
     font-weight: 500;
     letter-spacing: -2px;
     gap: 2rem;
-    font-size: 10rem;
-    margin: 10rem 0rem 8rem 13rem;
+    font-size: 8rem;
+    margin: 10rem 0rem 6rem 13rem;
     justify-content: flex-end;
 }
 
 
 .work_arrow img {
-    width: 10rem;
+    width: 8rem;
     margin-right: 2rem;
     margin-top: -0.8rem;
     filter: invert(1);
@@ -523,7 +526,7 @@ header {
 }
 
 .name p, .email p, .project p, .hello p {
-   font-size: 9rem;
+   font-size: 8rem;
 }
 
 .hello p {
@@ -540,23 +543,23 @@ header {
 }
 
 .name input {
-    width: 67rem;
+    width: 72rem;
 }
 
 .email input {
-    width: 44rem;
+    width: 53rem;
 }
 
 .project input {
-    width: 45.5rem;
+    width: 54rem;
 }
 
 .form_button {
-    font-size: 5rem;
-    margin: 3rem 0rem 3rem 103rem;
+    font-size: 3rem;
+    margin: 4rem 0rem 3rem 108rem;
     color: #000000;
     padding: 1rem;
-    width: 14rem;
+    width: 9rem;
     border-radius: 0.5rem;
     background-color: white;
     text-decoration: none;
@@ -659,16 +662,16 @@ header {
 
 
 .opinion1 { 
-  transform: rotate(-8deg);
+  transform: rotate(-11deg);
 }
 .opinion2 { 
-  transform: rotate(-4deg);
+  transform: rotate(-6deg);
 }
 .opinion3 { 
-  transform: rotate(2deg); 
+  transform: rotate(-2deg); 
 }
 .opinion4 { 
-  transform: rotate(6deg); 
+  transform: rotate(12deg); 
 }
 .opinion5 { 
   transform: rotate(10deg); 
@@ -710,7 +713,7 @@ header {
 .marquefooter-l h1 {
   color: #1d1d1b2b;
   font-size: 7rem;
-  font-weight: 500;
+  font-weight: 300;
   white-space: nowrap;
   letter-spacing: -2px;
   padding: 0 2%;
@@ -769,6 +772,7 @@ header {
 #foot .text_middle,
 #foot .text_bottom {
   position: relative;
+  top: 3rem;
   z-index: 1;
 }
 
@@ -806,6 +810,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin-top: -3rem;
   gap: 49rem;
 }
 
@@ -823,8 +828,7 @@ header {
 
 .text_middle {
   text-align: left;
-  margin-top: 19rem;
-  margin-bottom: -3rem;
+  margin-top: 21rem;
 }
 
 .text_middle .icon_top {
@@ -834,13 +838,14 @@ header {
 }
 
 .text_middle .icon_top p {
-  font-size: 9rem;
+  font-size: 8rem;
   font-weight: 500;
   letter-spacing: -2px;
 }
 
 .text_middle .icon_top img {
-  width: 7rem;
+  width: 5.8rem;
+  margin-top: -1rem;
   height: auto;
 }
 
@@ -850,6 +855,8 @@ header {
   align-items: flex-end;
   flex-wrap: wrap;
   padding-top: 1rem;
+  width: 96.5%;
+  margin: -3rem 0rem 2rem 2rem;
   font-size: 1.2rem;
 }
 
@@ -859,6 +866,7 @@ header {
 }
 .text_bottom ul {
   list-style: none;
+  color: var(--third-color);
   display: flex;
   gap: 2rem;
   margin: 0;
