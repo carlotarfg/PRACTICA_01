@@ -570,6 +570,19 @@ header {
 
 }
 
+.form input {
+  color: #fff !important;
+}
+
+.form input::placeholder {
+  color: #bfbfbf !important; 
+}
+
+.form input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 
 /* BRANDS  */
 

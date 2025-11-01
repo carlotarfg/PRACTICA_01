@@ -187,3 +187,42 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+// --------------- 
+
+
+
+const opinions = document.querySelectorAll('#opinions .opinion1, #opinions .opinion2, #opinions .opinion3, #opinions .opinion4, #opinions .opinion5');
+
+opinions.forEach(opinion => {
+  const originalTransform = getComputedStyle(opinion).transform;
+
+  opinion.addEventListener('mouseenter', () => {
+    // Hacer la tarjeta recta, más grande y por encima
+    opinion.style.transform = 'rotate(0deg) translateY(-10px) scale(1.05)'; // recta y un poco más grande
+    opinion.style.zIndex = '999';
+    opinion.style.transition = 'transform 0.3s ease, z-index 0.3s ease, box-shadow 0.3s ease';
+    opinion.style.boxShadow = '0 15px 40px rgba(0,0,0,0.3)';
+
+    // Apartar las demás tarjetas
+    opinions.forEach(other => {
+      if(other !== opinion) {
+        other.style.transition = 'transform 0.3s ease';
+        other.style.transform += ' translateY(10px)'; // se mueven ligeramente hacia abajo
+      }
+    });
+  });
+
+  opinion.addEventListener('mouseleave', () => {
+    // Volvemos a la tarjeta a su estado original
+    opinion.style.transform = originalTransform;
+    opinion.style.zIndex = '';
+    opinion.style.boxShadow = '0 8px 20px rgba(0, 0, 0, 0.1)';
+
+    // Restauramos las demás tarjetas
+    opinions.forEach(other => {
+      if(other !== opinion) {
+        other.style.transform = getComputedStyle(other).transform.replace(' translateY(10px)','');
+      }
+    });
+  });
+});
