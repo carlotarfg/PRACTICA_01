@@ -108,7 +108,7 @@ function animateVideo() {
 window.addEventListener('scroll', animateVideo);
 animateVideo();
 
-// ----------- 
+// ----------- PROJECTS HOVER -------------
 document.addEventListener("DOMContentLoaded", () => {
 
   const headings = document.querySelectorAll(".marquework h1");
@@ -144,7 +144,6 @@ document.addEventListener("DOMContentLoaded", () => {
     img3: img3.src
   };
 
-  // define qué imágenes entran según el texto
   const imagesByCategory = {
     "UX / UI": {
       img1: "media/img/ux_2.png",
@@ -176,18 +175,23 @@ document.addEventListener("DOMContentLoaded", () => {
         img2.src = imagesByCategory[cat].img2;
         img3.src = imagesByCategory[cat].img3;
       }
+      // Cambiar color del texto a negro
+      h.style.color = "black";
     });
 
     h.addEventListener("mouseleave", () => {
       img1.src = defaultImages.img1;
       img2.src = defaultImages.img2;
       img3.src = defaultImages.img3;
+      // Restaurar color original (si quieres que vuelva al que tenía)
+      h.style.color = "";
     });
   });
 
 });
 
-// --------------- 
+
+// --------------- REVIEWS ---------------
 
 
 
