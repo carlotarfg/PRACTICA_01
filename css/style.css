@@ -291,11 +291,15 @@ header {
 .video_lola  video {
   width: 55%;
   margin-left: 26rem;
+  filter: grayscale(1);
   margin-bottom: 20rem;
   transition: transform 0.2s ease-out;
   transform-origin: center center;
 }
 
+.video_lola  video:hover {
+  filter: grayscale(0);
+}
 
 /* GRID STATS  */
 
@@ -364,7 +368,7 @@ header {
 .text-b {
     font-size: 8rem;
     width: 60%;
-    margin: 4rem 0rem 3rem 70rem;
+    margin: 4rem 0rem 3rem 66rem;
     line-height: 0.8;
     letter-spacing: -2px;
     font-weight: 500;
@@ -383,7 +387,7 @@ header {
   font-weight: 500;
   letter-spacing: -2px;
   font-size: 5rem;
-  margin: 8rem 0rem 0rem 13rem;
+  margin: 20rem 0rem 0rem 13rem;
 }
 
 
@@ -776,7 +780,6 @@ header {
   z-index: 1;
 }
 
-/* Texto principal */
 .text_top {
   display: flex;
   flex-direction: column;
@@ -786,6 +789,11 @@ header {
   line-height: 1;
   text-transform: uppercase;
   max-width: 80%;
+}
+
+.text_top3 p span img {
+    width: 7rem;
+    filter: invert(1);
 }
 
 .text_top1 p,
@@ -854,7 +862,6 @@ header {
   justify-content: space-between;
   align-items: flex-end;
   flex-wrap: wrap;
-  padding-top: 1rem;
   width: 96.5%;
   margin: -3rem 0rem 2rem 2rem;
   font-size: 1.2rem;

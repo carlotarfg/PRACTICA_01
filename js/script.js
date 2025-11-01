@@ -108,3 +108,82 @@ function animateVideo() {
 window.addEventListener('scroll', animateVideo);
 animateVideo();
 
+// ----------- 
+document.addEventListener("DOMContentLoaded", () => {
+
+  const headings = document.querySelectorAll(".marquework h1");
+
+  // imagenes
+  const img1 = document.querySelector('#work .col-lg-8 img');
+  const img2 = document.querySelector('#work .col-lg-4 img');
+  const img3 = document.querySelector('#work .col-12 img');
+
+  // contenedores
+  const cont1 = document.querySelector('#work .col-lg-8');
+  const cont2 = document.querySelector('#work .col-lg-4');
+  const contBottom = document.querySelector('#work .col-12');
+
+  // guardamos las alturas reales por filas
+  const row1Height = Math.max(cont1.offsetHeight, cont2.offsetHeight);
+  const row2Height = contBottom.offsetHeight;
+
+  // fijamos las alturas originales
+  cont1.style.height = row1Height + "px";
+  cont2.style.height = row1Height + "px";
+  contBottom.style.height = row2Height + "px";
+
+  // forzar fit igualado
+  [img1, img2, img3].forEach(img => {
+    img.style.height = "100%";
+    img.style.objectFit = "cover";
+  });
+
+  const defaultImages = {
+    img1: img1.src,
+    img2: img2.src,
+    img3: img3.src
+  };
+
+  // define qué imágenes entran según el texto
+  const imagesByCategory = {
+    "UX / UI": {
+      img1: "media/img/ux_2.png",
+      img2: "media/img/ux_3.png",
+      img3: "media/img/ux_1.png"
+    },
+    "3D": {
+      img1: "media/img/Rectangle 5.png",
+      img2: "media/img/Rectangle 5.png",
+      img3: "media/img/Rectangle 5.png"
+    },
+    "EDITORIAL": {
+      img1: "media/img/Rectangle 4.png",
+      img2: "media/img/Rectangle 4.png",
+      img3: "media/img/Rectangle 4.png"
+    },
+    "MOTION GRAPHICS": {
+      img1: "media/img/Rectangle 6.png",
+      img2: "media/img/Rectangle 6.png",
+      img3: "media/img/Rectangle 6.png"
+    }
+  };
+
+  headings.forEach(h => {
+    h.addEventListener("mouseenter", () => {
+      const cat = h.textContent.trim();
+      if (imagesByCategory[cat]) {
+        img1.src = imagesByCategory[cat].img1;
+        img2.src = imagesByCategory[cat].img2;
+        img3.src = imagesByCategory[cat].img3;
+      }
+    });
+
+    h.addEventListener("mouseleave", () => {
+      img1.src = defaultImages.img1;
+      img2.src = defaultImages.img2;
+      img3.src = defaultImages.img3;
+    });
+  });
+
+});
+
