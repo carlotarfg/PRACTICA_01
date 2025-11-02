@@ -20,30 +20,6 @@ document.querySelectorAll(".text p, .text1 p").forEach((line, i) => {
   observerText1.observe(line);
 });
 
-// ---------------- FADE----------------
-
-let lastScroll2 = 0;
-const optionsText2 = { threshold: 0.1 };
-
-function revealLine2(entry) {
-  const p = entry.target;
-  const currentScroll = window.scrollY;
-  const scrollingDown = currentScroll > lastScroll2;
-  lastScroll2 = currentScroll;
-
-  if (entry.isIntersecting && scrollingDown) {
-    p.style.opacity = 1;
-  }
-}
-
-const observerText2 = new IntersectionObserver(entries => {
-  entries.forEach(revealLine2);
-}, optionsText2);
-
-document.querySelectorAll(".text_about_us p").forEach((line, i) => {
-  line.style.transitionDelay = `${i * 0.15}s`;
-  observerText2.observe(line);
-});
 
 // ---------------- COUNT-UP----------------
 
@@ -230,3 +206,67 @@ opinions.forEach(opinion => {
     });
   });
 });
+
+// ----------------
+
+document.addEventListener("DOMContentLoaded", () => {
+  const lines = document.querySelectorAll(".vertical1, .vertical2, .vertical3");
+
+  // Guardamos la altura original y ponemos height a 0
+  lines.forEach(line => {
+    const fullHeight = parseFloat(getComputedStyle(line).height);
+    line.dataset.fullHeight = fullHeight; 
+    line.style.height = "0px";
+    line.style.transition = "height 0.45s ease"; // un poco más rápido
+  });
+
+  function drawLines() {
+    const windowBottom = window.innerHeight;
+
+    lines.forEach(line => {
+      const rect = line.getBoundingClientRect();
+      const fullHeight = parseFloat(line.dataset.fullHeight);
+
+      if (rect.top < windowBottom && rect.bottom > 0) {
+        // Proporción intermedia para acelerar ligeramente
+        let visibleRatio = ((windowBottom - rect.top) / (windowBottom + rect.height)) * 1.2;
+        visibleRatio = Math.min(Math.max(visibleRatio, 0), 1);
+        line.style.height = fullHeight * visibleRatio + "px";
+      }
+    });
+  }
+
+  window.addEventListener("scroll", drawLines);
+  drawLines(); // ejecutar al cargar por si ya hay scroll
+});
+
+
+// ------------------- 
+
+document.addEventListener("DOMContentLoaded", () => {
+  const texts2 = document.querySelectorAll(".effect2");
+
+  function animateTexts() {
+    const trigger = window.innerHeight * 0.8;
+
+    texts2.forEach(p => {
+      const rect = p.getBoundingClientRect();
+      let progress = 1 - (rect.top / trigger); // 0 cuando está lejos, 1 cuando entra
+      progress = Math.min(Math.max(progress, 0), 1);
+
+      // Interpolamos suavemente
+      p.style.opacity = progress;
+      p.style.transform = `scale(${0.9 + 0.1 * progress})`;
+    });
+  }
+
+  window.addEventListener("scroll", () => {
+    requestAnimationFrame(animateTexts);
+  });
+
+  animateTexts(); // inicial
+});
+
+
+
+

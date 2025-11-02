@@ -289,6 +289,7 @@ header {
   transition: opacity 0.4s ease;
 }
 
+
 .video_lola  video {
   width: 55%;
   margin-left: 26rem;
@@ -431,8 +432,8 @@ header {
 }
 
 .text_about_us p:first-child {
-  margin-left: 24rem;
-  margin-top: 11rem;
+  margin-left: 24.3rem;
+  margin-top: 10rem;
   width: 17%;
   font-weight: 400;
 
@@ -445,8 +446,8 @@ header {
 }
 
 .text_about_us p:last-child {
-  margin-left: 21.2rem;
-  margin-top: 39rem;
+  margin-left: 21.5rem;
+  margin-top: 40rem;
   width: 20%;
   font-weight: 400;
 
@@ -487,6 +488,33 @@ header {
   position: absolute;
   z-index: 1;
 }
+
+
+.effect-blur {
+  opacity: 0;
+  filter: blur(4px);
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease, filter 0.6s ease;
+}
+
+.effect-blur.active {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+.effect2 {
+  opacity: 0;
+  transform: scale(0.9);
+transition: opacity 0.8s ease, transform 0.8s ease; 
+}
+
+.effect2.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
 
 /* WORK WITH US  */
 
