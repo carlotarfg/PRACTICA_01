@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const updateNavbar = () => {
     if (mobileMenu.classList.contains("active")) {
-      navbar.style.backgroundColor = "blue";
+      navbar.style.backgroundColor = "#4F5DFF";
       navbar.style.borderRadius = "13px";
     } else {
       navbar.style.backgroundColor = "";
