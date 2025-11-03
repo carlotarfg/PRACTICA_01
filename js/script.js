@@ -1,3 +1,9 @@
+
+
+
+
+
+
 // ---------------- FADE ----------------
 
 const optionsText1 = { threshold: 0.1 };
@@ -29,7 +35,7 @@ const optionsNumbers = { threshold: 0.5 };
 const animateNumber = (el) => {
   const suffixEl = el.querySelector('span');
   const suffix = suffixEl ? suffixEl.textContent : '';
-  const target = parseInt(el.dataset.target); // número final
+  const target = parseInt(el.dataset.target); 
   let current = 0;
   const duration = 1500;
   const stepTime = Math.max(Math.floor(duration / target), 20);
@@ -37,7 +43,7 @@ const animateNumber = (el) => {
   const timer = setInterval(() => {
     current++;
     if (current >= target) {
-      current = target; // se asegura que llegue al número exacto
+      current = target; 
       clearInterval(timer);
     }
     el.textContent = current + suffix;
@@ -48,7 +54,7 @@ const observerNumbers = new IntersectionObserver((entries, obs) => {
   entries.forEach(entry => {
     if(entry.isIntersecting){
       animateNumber(entry.target);
-      obs.unobserve(entry.target); // solo se ejecuta una vez
+      obs.unobserve(entry.target); 
     }
   });
 }, optionsNumbers);
@@ -67,10 +73,8 @@ function animateVideo() {
   const windowHeight = window.innerHeight;
 
   if(rect.bottom > 0 && rect.top < windowHeight){
-    // Factor proporcional al scroll dentro del contenedor
     let scrollFactor = 1 - rect.top / (windowHeight + rect.height);
 
-    // Escala más rápida: de 1 → 1.5 en lugar de 1 → 1.35
     const scale = 1 + 0.5 * scrollFactor;
 
     video.style.transform = `scale(${scale})`;
@@ -85,30 +89,26 @@ window.addEventListener('scroll', animateVideo);
 animateVideo();
 
 // ----------- PROJECTS HOVER -------------
+
 document.addEventListener("DOMContentLoaded", () => {
 
   const headings = document.querySelectorAll(".marquework h1");
 
-  // imagenes
   const img1 = document.querySelector('#work .col-lg-8 img');
   const img2 = document.querySelector('#work .col-lg-4 img');
   const img3 = document.querySelector('#work .col-12 img');
 
-  // contenedores
   const cont1 = document.querySelector('#work .col-lg-8');
   const cont2 = document.querySelector('#work .col-lg-4');
   const contBottom = document.querySelector('#work .col-12');
 
-  // guardamos las alturas reales por filas
   const row1Height = Math.max(cont1.offsetHeight, cont2.offsetHeight);
   const row2Height = contBottom.offsetHeight;
 
-  // fijamos las alturas originales
   cont1.style.height = row1Height + "px";
   cont2.style.height = row1Height + "px";
   contBottom.style.height = row2Height + "px";
 
-  // forzar fit igualado
   [img1, img2, img3].forEach(img => {
     img.style.height = "100%";
     img.style.objectFit = "cover";
@@ -151,7 +151,6 @@ document.addEventListener("DOMContentLoaded", () => {
         img2.src = imagesByCategory[cat].img2;
         img3.src = imagesByCategory[cat].img3;
       }
-      // Cambiar color del texto a negro
       h.style.color = "black";
     });
 
@@ -159,7 +158,6 @@ document.addEventListener("DOMContentLoaded", () => {
       img1.src = defaultImages.img1;
       img2.src = defaultImages.img2;
       img3.src = defaultImages.img3;
-      // Restaurar color original (si quieres que vuelva al que tenía)
       h.style.color = "";
     });
   });
@@ -169,36 +167,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // --------------- REVIEWS ---------------
 
-
-
 const opinions = document.querySelectorAll('#opinions .opinion1, #opinions .opinion2, #opinions .opinion3, #opinions .opinion4, #opinions .opinion5');
 
 opinions.forEach(opinion => {
   const originalTransform = getComputedStyle(opinion).transform;
 
   opinion.addEventListener('mouseenter', () => {
-    // Hacer la tarjeta recta, más grande y por encima
-    opinion.style.transform = 'rotate(0deg) translateY(-10px) scale(1.05)'; // recta y un poco más grande
+    opinion.style.transform = 'rotate(0deg) translateY(-10px) scale(1.05)';
     opinion.style.zIndex = '999';
     opinion.style.transition = 'transform 0.3s ease, z-index 0.3s ease, box-shadow 0.3s ease';
     opinion.style.boxShadow = '0 15px 40px rgba(0,0,0,0.3)';
 
-    // Apartar las demás tarjetas
     opinions.forEach(other => {
       if(other !== opinion) {
         other.style.transition = 'transform 0.3s ease';
-        other.style.transform += ' translateY(10px)'; // se mueven ligeramente hacia abajo
+        other.style.transform += ' translateY(10px)'; 
       }
     });
   });
 
   opinion.addEventListener('mouseleave', () => {
-    // Volvemos a la tarjeta a su estado original
     opinion.style.transform = originalTransform;
     opinion.style.zIndex = '';
     opinion.style.boxShadow = '0 8px 20px rgba(0, 0, 0, 0.1)';
 
-    // Restauramos las demás tarjetas
     opinions.forEach(other => {
       if(other !== opinion) {
         other.style.transform = getComputedStyle(other).transform.replace(' translateY(10px)','');
@@ -207,17 +199,16 @@ opinions.forEach(opinion => {
   });
 });
 
-// ----------------
+// ---------------- LINEA ----------
 
 document.addEventListener("DOMContentLoaded", () => {
   const lines = document.querySelectorAll(".vertical1, .vertical2, .vertical3");
 
-  // Guardamos la altura original y ponemos height a 0
   lines.forEach(line => {
     const fullHeight = parseFloat(getComputedStyle(line).height);
     line.dataset.fullHeight = fullHeight; 
     line.style.height = "0px";
-    line.style.transition = "height 0.45s ease"; // un poco más rápido
+    line.style.transition = "height 0.45s ease"; 
   });
 
   function drawLines() {
@@ -228,7 +219,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const fullHeight = parseFloat(line.dataset.fullHeight);
 
       if (rect.top < windowBottom && rect.bottom > 0) {
-        // Proporción intermedia para acelerar ligeramente
         let visibleRatio = ((windowBottom - rect.top) / (windowBottom + rect.height)) * 1.2;
         visibleRatio = Math.min(Math.max(visibleRatio, 0), 1);
         line.style.height = fullHeight * visibleRatio + "px";
@@ -237,36 +227,45 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   window.addEventListener("scroll", drawLines);
-  drawLines(); // ejecutar al cargar por si ya hay scroll
+  drawLines(); 
 });
 
 
-// ------------------- 
 
-document.addEventListener("DOMContentLoaded", () => {
-  const texts2 = document.querySelectorAll(".effect2");
+// ----------- POP UP ---------- 
 
-  function animateTexts() {
-    const trigger = window.innerHeight * 0.8;
+document.addEventListener('DOMContentLoaded', () => {
+  const banner = document.getElementById('cookie-banner');
+  const acceptAllBtn = document.getElementById('accept-all');
+  const manageBtn = document.getElementById('manage-cookies');
+  const closeBtn = document.getElementById('close-cookie');
 
-    texts2.forEach(p => {
-      const rect = p.getBoundingClientRect();
-      let progress = 1 - (rect.top / trigger); // 0 cuando está lejos, 1 cuando entra
-      progress = Math.min(Math.max(progress, 0), 1);
-
-      // Interpolamos suavemente
-      p.style.opacity = progress;
-      p.style.transform = `scale(${0.9 + 0.1 * progress})`;
-    });
+  if (!localStorage.getItem('cookiesAccepted')) {
+    setTimeout(() => {
+      banner.classList.add('show');
+    }, 300);
   }
 
-  window.addEventListener("scroll", () => {
-    requestAnimationFrame(animateTexts);
+  const acceptAndHide = () => {
+    banner.classList.remove('show');
+    setTimeout(() => {
+      banner.style.display = 'none';
+    }, 400);
+    localStorage.setItem('cookiesAccepted', 'true');
+  };
+
+  acceptAllBtn?.addEventListener('click', acceptAndHide);
+
+  manageBtn?.addEventListener('click', () => {
+    alert('Redirecting to cookie settings...');
+    acceptAndHide(); 
   });
 
-  animateTexts(); // inicial
+  closeBtn?.addEventListener('click', () => {
+    banner.classList.remove('show');
+    setTimeout(() => {
+      banner.style.display = 'none';
+    }, 400);
+    
+  });
 });
-
-
-
-

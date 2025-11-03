@@ -46,6 +46,115 @@ img{
 }
 
 
+/* POP UP  */
+.cookie-banner {
+  position: fixed;
+  bottom: 1.5rem; 
+  left: 1.5rem;
+  max-width: 50rem;
+  width: calc(100% - 3rem);
+  background: white;
+  padding: 1.75rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: all 0.4s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  font-size: 1rem;
+}
+
+.cookie-banner.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.cookie-banner h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.cookie-banner p {
+  font-size: 1.4rem;
+  color: #444;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1.7rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.close-btn:hover {
+  background: var(--second-color);
+  color: var(--primary-color);
+}
+
+.cookie-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.btn {
+  padding: 0.85rem 1.5rem;
+  border-radius: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+  flex: 1;
+  min-width: 120px;
+  text-align: center;
+}
+
+.primary {
+  background: var(--primary-color);
+  color: var(--second-color);
+  font-weight: 400;
+
+}
+
+.primary:hover {
+  background: #d1d1d1;
+  transform: translateY(-2px);
+  color: #000000;
+}
+
+.secondary {
+  background: transparent;
+  color: #555;
+  font-weight: 400;
+  border: 1px solid #ddd;
+}
+
+.secondary:hover {
+  background: #d1d1d1;
+  transform: translateY(-2px);
+
+  color: var(--primary-color);
+}
+
 
 /* HEADER HOME  */
 
@@ -56,8 +165,6 @@ header {
   padding: 0px;
   height: 68rem;
   max-width: 100%;    
-
-
 }
 
 .header_up {
@@ -65,8 +172,6 @@ header {
   flex-direction: row;
   justify-content: space-between;
   height: 25.5rem;
-    
-
 }
 
 
@@ -75,8 +180,8 @@ header {
   display: flex;
   flex-direction: row;
   margin: 1rem;
-  margin-right: 4.5rem;
-  margin-top: 4rem;
+  margin-right: -0.5rem;
+  margin-top: -1rem;
   font-weight: 300;
   gap: 6rem;
   font-size: 1.8rem;
@@ -89,6 +194,116 @@ header {
 
 }
 
+
+/* ----- MENU RESPONSIVE  */
+
+
+.navbar {
+  width: 15rem;
+  height: 12rem;
+  padding: 1.2rem;
+
+  left: clamp(1rem, 100vw - 16rem, 45rem);
+  
+  top: -22rem;
+  box-sizing: border-box;
+
+  transition: 
+    background-color 0.6s ease, 
+    border-radius 0.6s ease,
+    left 0.4s ease;
+  
+}
+
+.menu-desktop {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+  margin-right: 4.5rem;
+  margin-top: 4rem;
+  font-weight: 300;
+  gap: 6rem;
+  font-size: 1.8rem;
+}
+
+.menu-desktop a {
+  color: var(--second-color);
+  text-decoration: none;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  width: 8rem;
+  padding: 0.5rem;
+  background-color: var(--primary-color);
+  margin-left: 5rem;
+  margin-bottom: 1.2rem;
+  border-radius: 32px;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: var(--second-color);
+  cursor: pointer;
+  display: none; 
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.menu-mobile {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 0.6;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease-in-out;
+}
+
+.menu-mobile li {
+  margin: 1.2rem 0; 
+}
+
+.menu-mobile a {
+  color: var(--second-color);
+  text-decoration: none;
+  display: block;
+}
+
+.menu-mobile.active {
+  max-height: 150px; 
+}
+
+
+@media (min-width: 1000px) {
+  .menu-toggle {
+    display: none !important;
+  }
+  .menu-mobile {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .menu-toggle {
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu-desktop {
+    display: none;
+  }
+
+  .navbar {
+    display: block; 
+  }
+}
+
+/* -------------  */
+
 .logo {
   margin: -2rem 0rem 0rem 2rem;
   width: 100%;
@@ -98,7 +313,7 @@ header {
 
 .text_header {
   display: flex;
-  margin-top: 8rem;
+  margin-top: -5rem;
   gap: 34rem;
   line-height: 0.8;
   margin-bottom: 0rem;
@@ -933,3 +1148,169 @@ transition: opacity 0.8s ease, transform 0.8s ease;
   opacity: 0.9;
 }
 
+
+
+
+
+
+
+
+
+
+/* --------------- MEDIA QUERYS ---------------  */
+
+@media (max-width: 1000px) {
+
+
+
+.logo {
+  margin: -7rem 0rem 0rem 2rem;
+  max-width: 25rem;
+}
+
+.menu-desktop { 
+  margin: 1rem;
+  margin-right: 3.5rem;
+  margin-top: 4rem;
+  gap: 6rem;
+  font-size: 1.5rem;
+}
+
+.menu {
+  margin: 1rem;
+  margin-right: -0.5rem;
+  margin-top: -1rem;
+  font-weight: 300;
+  gap: 6rem;
+  font-size: 1.8rem;
+}
+
+  .text_header {
+  margin-top: 14rem;
+  gap: 11rem;
+  line-height: 0.4;
+}
+
+.texth_1 p {
+  font-size: 1.4rem;
+  line-height: 1.1;
+  width: 16rem;
+  margin-left: 2rem;
+}
+
+.texth_2 p {
+  font-size: 3rem;
+}
+
+.texth_2 p:first-child {
+  margin-left: 9rem;
+  margin-bottom: 1.4rem;
+}
+
+.texth_2 p:last-child {
+  margin-left: 17rem;
+}
+
+.icon-img {
+  width: 3.5%;
+}
+
+.cookie-banner {
+  max-width: 36rem;
+}
+
+.cookie-banner h3 {
+  font-size: 1.6rem;
+}
+
+.close-btn {
+  top: 1rem;
+  right: 1rem;
+  font-size: 2.5rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.cookie-banner p {
+  font-size: 1.3rem;
+}
+
+.btn {
+  padding: 0.85rem 1.5rem;
+  font-size: 1.3rem;
+}
+
+#work > p {
+  font-size: 5rem;
+  letter-spacing: -5px;
+}
+
+.marquework h1 {
+  font-size: 5rem;
+  font-weight: 300;
+  letter-spacing: -6px;
+}
+
+.arrow-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.circle-link {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.title_know {
+  letter-spacing: -3px;
+  font-size: 4rem;
+  margin: 6rem 0rem 0rem 0rem;
+}
+
+.about_us_arrow img {
+  width: 3.7rem;
+  margin-left: 1.5rem;
+}
+
+.text1 > p, .text > p {
+  font-size: 2.3rem;
+}
+
+.text {
+  width: 39%;
+  line-height: 0.95;
+  letter-spacing: -1px;
+  margin: 0rem 25rem 21rem 20rem;
+}
+
+.text1 {
+  width: 38%;
+  line-height: 0.95;
+  letter-spacing: -1px;
+  margin: 19rem 25rem 10rem 20rem;
+}
+
+.video_lola video {
+  margin-left: 14rem;
+  margin-bottom: 10rem;
+}
+
+.stat-number {
+    font-size: 7rem;
+    letter-spacing: -8px;
+}
+
+.stat-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.stat-card {
+    padding: 2rem;
+    text-align: left;
+    height: 15rem;
+    gap: 2rem;
+}
+
+}
