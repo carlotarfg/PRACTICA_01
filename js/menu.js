@@ -7,9 +7,11 @@ document.addEventListener("DOMContentLoaded", () => {
     if (mobileMenu.classList.contains("active")) {
       navbar.style.backgroundColor = "#4F5DFF";
       navbar.style.borderRadius = "13px";
+      toggleBtn.textContent = "MENU –"; // abierto
     } else {
       navbar.style.backgroundColor = "";
       navbar.style.borderRadius = "";
+      toggleBtn.textContent = "MENU +"; // cerrado
     }
   };
 
@@ -18,19 +20,15 @@ document.addEventListener("DOMContentLoaded", () => {
     updateNavbar();
   });
 
-  // Detectar cambios de tamaño
+  // Detectar pantallas >=1000px
   const mediaQuery = window.matchMedia("(min-width: 1000px)");
   const handleResize = (e) => {
     if (e.matches) {
-      // Pantalla >= 1000px: ocultar menú móvil y quitar estilos
       mobileMenu.classList.remove("active");
       updateNavbar();
     }
   };
 
-  // Escuchar cambios de media query
   mediaQuery.addEventListener("change", handleResize);
-
-  // Llamada inicial por si la página ya carga en escritorio
   handleResize(mediaQuery);
 });

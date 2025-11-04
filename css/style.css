@@ -314,8 +314,7 @@ header {
 .text_header {
   display: flex;
   margin-top: -5rem;
-  gap: 34rem;
-  line-height: 0.8;
+ gap: clamp(2rem, 24vw, 34rem);line-height: 0.8;
   margin-bottom: 0rem;
   flex-direction: row;
   align-items: flex-end;
@@ -332,6 +331,7 @@ header {
 
 .texth_2 b {
   font-weight: 500; 
+  
 }
 
 .texth-2 {
@@ -1159,9 +1159,749 @@ transition: opacity 0.8s ease, transform 0.8s ease;
 
 /* --------------- MEDIA QUERYS ---------------  */
 
+
+@media (max-width: 1800px) {
+  .text_header {
+    gap: clamp(2rem, 24vw, 34rem);
+  }
+
+  .text-b {
+    margin: 4rem 0rem 3rem 59rem;
+  }
+
+  .name input {
+    width: 67rem;
+  }
+
+  .email input {
+      width: 48rem;
+  }
+
+  .project input {
+      width: 49rem;
+  }
+
+  .form_button {
+      margin: 4rem 9rem 3rem 100.5rem;
+  }
+
+  .five {
+    width: 98rem;
+    margin-left: 6rem;
+    margin-top: 6rem;
+  }
+
+  #foot .top {
+      gap: 44rem;
+  }
+
+  .text_middle {
+    text-align: left;
+    margin-top: 7rem;
+}
+}
+
+@media (max-width: 1700px) {
+  .text_header {
+    gap: clamp(2rem, 20vw, 34rem);
+  }
+   .text-b {
+    margin: 4rem 0rem 3rem 53rem;
+  }
+
+  .name input {
+    width: 61rem;
+  }
+
+  .email input {
+      width: 42rem;
+  }
+
+  .project input {
+      width: 43rem;
+  }
+
+  .form_button {
+      margin: 4rem 9rem 3rem 94.5rem;
+  }
+
+  .hello p {
+    margin-left: 34rem;
+  }
+
+  .text_about_us p:last-child {
+      width: 24%;
+  }
+
+  .five {
+    width: 91rem;
+    margin-left: 6rem;
+    margin-top: 6rem;
+  }
+
+  #foot .top {
+      gap: 38rem;
+  }
+
+  .text_middle {
+    text-align: left;
+    margin-top: 7rem;
+}
+
+}
+
+@media (max-width: 1600px) {
+  .text_header {
+    gap: clamp(2rem, 25vw, 34rem);
+    margin-top: 0rem;
+  }
+
+  .texth_2 p {
+    font-size: 5rem;
+    width: 59rem;
+    font-weight: 400;
+    margin-left: 2rem;
+  }
+
+  .texth_2 p:last-child {
+    margin-left: 28rem;
+  }
+
+  .video_lola video {
+    margin-left: 23rem;
+  }
+
+  .text1 {
+    margin: 22rem 25rem 15rem 35rem;
+  }
+  .text {
+    margin: 18rem 25rem 19rem 35rem;
+  }
+
+   .text-b {
+    margin: 4rem 0rem 3rem 47rem;
+  }
+
+  .name input {
+    width: 55rem;
+  }
+
+  .email input {
+      width: 36rem;
+  }
+
+  .project input {
+      width: 37rem;
+  }
+
+  .form_button {
+      margin: 4rem 9rem 3rem 88.5rem;
+  }
+
+  .text_about_us p:last-child {
+      width: 24%;
+  }
+
+  .five {
+    width: 85rem;
+    margin-left: 5rem;
+    margin-top: 6rem;
+  }
+
+  .opinion1, .opinion2, .opinion3, .opinion4, .opinion5 {
+    width: 22rem;
+    height: 42rem;
+  }
+
+  .review {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+
+  .text_top1 p, .text_top2 p, .text_top3 p {
+    font-size: 8rem;
+  }
+
+   #foot .img_footer {
+    margin-left: 1.5rem;
+  }
+}
+
+@media (max-width: 1500px) {
+  .text_header {
+    gap: clamp(2rem, 20vw, 34rem);
+  }
+
+  .video_lola video {
+    margin-left: 22rem;
+  }
+
+  .text1 {
+    margin: 22rem 25rem 15rem 32rem;
+  }
+  .text {
+    margin: 18rem 25rem 19rem 32rem;
+  }
+
+  .text-b {
+    font-size: 7rem;
+  }
+
+  .name input {
+    width: 48rem;
+  }
+
+  .email input {
+      width: 29rem;
+  }
+
+  .project input {
+      width: 31rem;
+  }
+
+  .form_button {
+      margin: 4rem 9rem 3rem 82.5rem;
+  }
+
+  .title_work {
+    font-size: 7rem;
+  }
+
+  .work_arrow img {
+    width: 7rem;
+  }
+
+  .text_about_us p:first-child {
+    width: 21%;
+  }
+
+  .text_about_us p:nth-child(2) {
+    margin-left: 40rem;
+    width: 21%;
+  }
+
+  .text_about_us p:last-child {
+    width: 19%;
+    margin-left: 25rem;
+    margin-top: 37rem;
+  }
+
+  .five {
+    width: 85rem;
+    margin-left: 5rem;
+    margin-top: 6rem;
+  }
+
+  .opinion1, .opinion2, .opinion3, .opinion4, .opinion5 {
+    width: 20rem;
+    height: 37rem;
+  }
+
+  .star-o {
+    font-size: 1.2rem;
+  }
+
+  .brand {
+    font-size: 1.1rem;
+  }
+
+  .h1_opinions h1 {
+    font-size: 4.5rem;
+  }
+
+  .review {
+    font-size: 1.4rem;
+    line-height: 1.15;
+  }
+
+  .text_top1 p, .text_top2 p, .text_top3 p {
+    font-size: 7rem;
+  }
+
+  .text_middle .icon_top img {
+    width: 5.5rem;
+  }
+
+  .text_middle .icon_top p {
+    font-size: 7rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .text_header {
+    gap: clamp(2rem, 15vw, 34rem);
+  }
+
+  .title_know {
+    font-size: 5rem;
+  }
+
+  .about_us_arrow img {
+    width: 5rem;
+    margin-left: 2rem;
+    margin-top: -0.8rem;
+  }
+
+  .text1 > p, .text > p {
+    font-size: 2.5rem;
+  }
+
+  .text1 {
+    margin: 22rem 25rem 15rem 31rem;
+  }
+
+  .text {
+    margin: 22rem 25rem 15rem 31rem;
+  }
+
+  .video_lola video {
+    margin-left: 20.5rem;
+  }
+
+  .stat-card {
+    height: 19rem;
+  }
+
+  .text-b {
+    font-size: 6rem;
+  }
+
+  .name input {
+    width: 48rem;
+  }
+
+  .email input {
+      width: 32rem;
+  }
+
+  .project input {
+      width: 33rem;
+  }
+
+  .form_button {
+      margin: 4rem 9rem 3rem 76.5rem;
+  }
+
+  .hello p {
+    margin-left: 30rem;
+  }
+
+  .title_work {
+    font-size: 7rem;
+  }
+
+  .work_arrow img {
+    width: 7rem;
+  }
+
+  .title_about_us {
+    font-size: 4.5rem;  
+  }
+
+  .about_us_arrow img {
+    width: 5rem;
+  }
+
+  .vertical2 {
+    max-height: 1450px; 
+  }
+
+  .vertical3 {
+    top: 139rem;  
+  }
+
+  .text_about_us p {
+    font-size: 1.8rem;
+}
+
+  .text_about_us p:first-child {
+    width: 21%;
+    margin-left: 24.3rem;
+    margin-top: 11rem;
+  }
+
+  .text_about_us p:nth-child(2) {
+    margin-left: 40rem;
+    width: 21%;
+  }
+
+  .text_about_us p:last-child {
+    width: 19%;
+    margin-left: 26rem;
+    margin-top: 36rem;
+  }
+  .name p, .email p, .project p, .hello p {
+    font-size: 7rem;
+  }
+
+  .name input, .email input, .project input {
+    height: 6rem;
+    font-size: 1.7rem;
+  } 
+
+  .five {
+    width: 85rem;
+    flex-wrap: wrap;
+    align-items: center;    
+    justify-content: center;
+    margin-left: 0rem;
+    margin-top: 6rem;
+  }
+
+  .opinion2 {
+    transform: rotate(4deg);
+}
+  .opinion1, .opinion2, .opinion3, .opinion4, .opinion5 {
+    width: 31rem;
+    height: 37rem;
+  }
+
+  .star-o {
+    font-size: 1.5rem;
+  }
+
+  .brand {
+    font-size: 1.5em;
+  }
+
+  .h1_opinions h1 {
+    font-size: 4.5rem;
+  }
+
+  .review {
+    font-size: 1.6rem;
+    line-height: 1.15;
+  }
+
+  .text_top1 p, .text_top2 p, .text_top3 p {
+    font-size: 6rem;
+  }
+
+  .text_middle .icon_top img {
+    width: 5rem;
+  }
+
+  .text_middle .icon_top p {
+    font-size: 6rem;
+  }
+
+  #foot {
+    height: 86vh;
+  }
+  }
+
+
+
+@media (max-width: 1300px) {
+  .text_header {
+    gap: clamp(2rem, 19vw, 34rem);
+    margin-top: 5rem;
+  }
+  .texth_2 p {
+    font-size: 4rem;
+    width: 47rem;
+    font-weight: 400;
+    margin-left: 2rem;
+  }
+
+  .texth_2 p:last-child {
+    margin-left: 21rem; 
+  }
+
+  .marquework h1 {
+    font-size: 6rem;
+  }
+
+  .text {
+    margin: 14rem 25rem 19rem 29rem;
+  }
+
+  .text1 {
+    margin: 22rem 25rem 15rem 29rem;
+  }
+
+  .video_lola video {
+    margin-left: 18.5rem;
+  }
+
+  .stat-number {
+    font-size: 9rem;
+  }
+
+  .text-b {
+    margin: 4rem 0rem 3rem 41rem;
+  }
+
+  .vertical1, .vertical2, .vertical3 {
+    left: 31rem;
+  }
+
+  .text_about_us p:first-child {
+    width: 21%;
+    margin-left: 22.3rem;
+    margin-top: 11rem;
+  }
+
+  .text_about_us p:nth-child(2) {
+    margin-left: 36rem;
+    width: 21%;
+  }
+
+  .text_about_us p:last-child {
+    width: 19%;
+    margin-left: 23.5rem;
+    margin-top: 35rem;
+  }
+
+  .name p, .email p, .project p, .hello p {
+    font-size: 6rem;
+  }
+
+  .name input {
+    width: 47rem;
+  }
+
+  .email input {
+    width: 33rem;
+  }
+
+  .project input {
+    width: 34rem;
+  }
+
+  .form_button {
+    margin: 4rem 9rem 3rem 69.5rem;
+  }
+
+  .hello p {
+    margin-left: 25rem;
+  }
+
+  #foot .top {
+    gap: 32rem;
+  }
+
+
+}
+
+@media (max-width: 1200px) {
+  .text_header {
+    gap: clamp(2rem, 14vw, 34rem);
+  }
+
+  .text {
+    margin: 14rem 25rem 19rem 27rem;
+  }
+
+  .text1 {
+    margin: 22rem 25rem 15rem 27rem;
+  }
+
+  .video_lola video {
+    margin-left: 17rem;
+  }
+
+  .stat-number {
+    font-size: 8.5rem;
+  }
+
+  .text-b {
+    margin: 4rem 0rem 3rem 35rem;
+  }
+
+  .vertical1, .vertical2, .vertical3 {
+    left: 30rem;
+  }
+
+  .text_about_us p:first-child {
+    width: 20%;
+    margin-left: 22.3rem;
+    margin-top: 11rem;
+  }
+
+  .text_about_us p:nth-child(2) {
+    margin-left: 34rem;
+    width: 25%;
+  }
+
+  .text_about_us p:last-child {
+    width: 21%;
+    margin-left: 22.5rem;
+    margin-top: 33rem;
+  }
+
+  .name p, .email p, .project p, .hello p {
+    font-size: 6rem;
+  }
+
+  .title_work {
+    font-size: 6rem;
+  }
+
+  .work_arrow img {
+    width: 6rem;
+  } 
+
+  .name input {
+    width: 41rem;
+  }
+
+  .email input {
+    width: 27rem;
+  }
+
+  .project input {
+    width: 28rem;
+  }
+
+  .form_button {
+    margin: 4rem 9rem 3rem 63.5rem;
+  }
+
+  .hello p {
+    margin-left: 25rem;
+  }
+
+  .opinion1, .opinion2, .opinion3, .opinion4, .opinion5 {
+    width: 29rem;
+    height: 37rem;
+  }
+
+  .review {
+    font-size: 1.45rem;
+    line-height: 1.15;
+  }
+
+  .marquefooter-r h1, .marquefooter-l h1 {
+    font-size: 6rem;
+  }
+
+  #foot .top {
+    gap: 26rem;
+  }
+
+  #foot {
+    height: 75vh;
+  }
+
+ 
+
+}
+
+@media (max-width: 1100px) {
+  .text_header {
+  gap: clamp(2rem, 6vw, 34rem);
+  }
+
+  .text {
+    margin: 14rem 25rem 19rem 23rem;
+  }
+
+  .text1 {
+    margin: 15rem 25rem 15rem 23rem;
+  }
+
+  .video_lola video {
+    margin-left: 16rem;
+  }
+
+  .stat-number {
+    font-size: 8rem;
+  }
+
+  .text-b {
+    margin: 4rem 0rem 3rem 29rem;
+  }
+
+  .vertical1, .vertical2, .vertical3 {
+    left: 29rem;
+  }
+
+  .text_about_us p:first-child {
+    width: 21%;
+    margin-left: 22.3rem;
+    margin-top: 11rem;
+  }
+
+  .text_about_us p:nth-child(2) {
+    margin-left: 34rem;
+    width: 25%;
+  }
+
+  .text_about_us p:last-child {
+    width: 24%;
+    margin-left: 21rem;
+    margin-top: 33rem;
+  }
+
+  .name input, .email input, .project input {
+    height: 5rem;
+    font-size: 1.4rem;
+  }
+
+  .title_work {
+    font-size: 6rem;
+  }
+
+  .work_arrow img {
+    width: 6rem;
+  } 
+
+  .name input {
+    width: 35rem;
+  }
+
+  .email input {
+    width: 21rem;
+  }
+
+  .project input {
+    width: 22rem;
+  }
+
+  .form_button {
+    margin: 4rem 9rem 3rem 58.5rem;
+    font-size: 2.5rem;
+    width: 8rem;
+  }
+
+  .h1_opinions h1 {
+    font-size: 3.5rem;
+    letter-spacing: -3px;
+  }
+
+  .hello p {
+    margin-left: 25rem;
+  }
+
+  .opinion1, .opinion2, .opinion3, .opinion4, .opinion5 {
+    width: 26rem;
+    height: 37rem;
+  }
+
+  .review {
+    font-size: 1.45rem;
+    line-height: 1.15;
+  }
+
+  .marquefooter-r h1, .marquefooter-l h1 {
+    font-size: 6rem;
+  }
+
+  #foot .top {
+    gap: 19rem;
+  }
+
+  #foot {
+    height: 75vh;
+  }
+  .text_bottom {
+    width: 95.5%;
+  }
+
+}
+
 @media (max-width: 1000px) {
-
-
 
 .logo {
   margin: -7rem 0rem 0rem 2rem;
@@ -1331,76 +2071,445 @@ transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .text_about_us p:first-child {
-    margin-left: 15.3rem;
-        margin-top: 12rem;
-        width: 22%;
-        font-weight: 400;
+  margin-left: 15.3rem;
+  margin-top: 12rem;
+  width: 22%;
+  font-weight: 400;
 }
 
 .text_about_us p {
-    font-family: "Inter Tight", sans-serif;
-    line-height: 1.1;
-    letter-spacing: -1px;
-    font-size: 1.6rem;
-    margin-top: 6rem;
-    text-align: center;
-    opacity: 0.2;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  font-size: 1.6rem;
+  margin-top: 6rem;
     
 }
 
 .vertical1 {
-    width: 0.2rem;
-    top: 10rem;
-    left: 22rem;
-    opacity: 0.2;
-    background-color: black;
-    border: none;
-    position: absolute;
-    z-index: 1;
+  width: 0.2rem;
+  top: 10rem;
+  left: 22rem;
+  opacity: 0.2;
+  background-color: black;
+  border: none;
+  position: absolute;
+  z-index: 1;
 }
 
 .vertical2 {
-    width: 0.2rem;
-    top: 28rem;
-    left: 22rem;
-    opacity: 0.2;
-    max-height: 960px;
-    background-color: black;
-    border: none;
-    position: absolute;
-    z-index: 1;
+  width: 0.2rem;
+  top: 28rem;
+  left: 22rem;
+  max-height: 960px;
 }
 
 .vertical3 {
+  width: 0.2rem;
+  top: 99rem;
+  left: 22rem;
+}
+
+.text_about_us p:nth-child(2) {
+  margin-left: 28rem;
+  margin-top: 2rem;
+  width: 24%;
+}
+
+.text_about_us p:last-child {
+  margin-left: 15.3rem;
+  margin-top: 2rem;
+  width: 22%;
+}
+
+#about_us {
+  position: relative;
+  height: 57rem;
+}
+
+.text_about_us {
+  gap: 27rem;
+}
+
+.title_work {
+  font-weight: 500;
+  letter-spacing: -3px;
+  gap: 2rem;
+  font-size: 5rem;
+  margin: 10rem 0rem 6rem 13rem;
+}
+
+.work_arrow img {
+  width: 5rem;
+  margin-right: 2rem;
+  margin-top: -0.8rem;
+}
+
+.name p, .email p, .project p, .hello p {
+  font-size: 5rem;
+}
+
+.hello p {
+  margin-left: 19rem;
+}
+
+.name input {
+  width: 34rem;
+}
+
+.name input, .email input, .project input {
+  height: 4rem;
+  font-size: 1.4rem;
+}
+
+.email input {
+  width: 22rem;
+}
+.project input {
+  width: 23rem;
+}
+
+.form_button {
+  font-size: 2.5rem;
+  margin: 2rem 0rem 2rem 52rem;
+  padding: 1rem;
+  width: 8rem;
+  letter-spacing: -2px;
+}
+
+.h1_opinions h1 {
+  font-size: 3rem;
+  margin-left: 1rem;
+  letter-spacing: -3px;
+}
+
+.opinion1, .opinion2, .opinion3, .opinion4, .opinion5 {
+  width: 24.5rem;
+  height: 41rem;
+}
+
+.opinion2 {
+  transform: rotate(2deg);
+}
+
+.opinion4 {
+  transform: rotate(8deg);
+}
+
+.opinion3 {
+  transform: rotate(-4deg);
+}
+
+.review {
+  font-size: 1.4rem;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+}
+
+.five {
+  margin-left: 1rem;
+  margin-top: 6rem;
+  flex-wrap: wrap;
+}
+
+.marquefooter-r h1, .marquefooter-l h1 {
+  font-size: 5rem;
+  font-weight: 300;
+  letter-spacing: -8px;
+}
+
+.marquefooter-r {
+  margin-top: 7rem;
+  margin-bottom: -2rem;
+}
+
+#opinions {
+  height: 161vh;
+}
+
+#foot {
+  height: 63vh;
+  padding: 3rem;
+}
+
+#foot .top {
+  margin-top: -3rem;
+  gap: 23rem;
+}
+
+.text_top1 p, .text_top2 p, .text_top3 p {
+  font-size: 5rem;
+  letter-spacing: -5px;
+}
+
+.icon_top img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.text_middle .icon_top p {
+  font-size: 5rem;
+  font-weight: 500;
+  letter-spacing: -2px;
+}
+
+#foot .img_footer {
+  top: 0;
+  left: 0;
+  width: 98.5%;
+  margin-left: 1rem;
+  height: 100%;
+  z-index: 0;
+}
+
+.text_middle {
+  text-align: left;
+  margin-top: 13rem;
+}
+
+.text_middle .icon_top img {
+  width: 3.8rem;
+  margin-top: -1rem;
+  height: auto;
+}
+
+
+.text_bottom {
+  width: 96.5%;
+  margin: -3rem 0rem 2rem 1rem;
+  font-size: 1.2rem;
+}
+
+.text_bottom ul {
+  gap: 1rem;
+}
+
+}
+
+
+
+@media (max-width: 900px) {
+
+  .text_header {
+    margin-top: 14rem;
+    gap: 7rem;
+    line-height: 0.4;
+  }
+
+  .texth_1 p {
+    font-size: 1.2rem;
+    line-height: 1.1;
+    width: 14rem;
+    margin-left: 2rem;
+  }
+
+  .text1 > p, .text > p {
+    font-size: 2.1rem;
+  } 
+
+  .text1 {
+    margin: 19rem 25rem 10rem 19rem;
+  }
+
+  .text {
+    margin: 0rem 25rem 21rem 19rem;
+  }
+
+  .px-3 {
+    padding-right: 0rem !important;
+    padding-left: 0rem !important;
+  }
+
+  .text-b {
+    font-size: 4.5rem;
+    margin: 3rem 0rem 3rem 26.5rem;
+  } 
+
+  .title_about_us {
+    letter-spacing: -2px;
+    font-size: 3rem;
+    margin: 15rem 0rem 0rem 8rem;
+  }
+
+  .text_about_us p:first-child {
+    margin-left: 14rem;
+    margin-top: 12rem;
+    width: 22%;
+    font-weight: 400;
+  }
+
+  .text_about_us {
+    gap: 22.5rem;
+  }
+
+  .vertical1 {
     width: 0.2rem;
-    top: 99rem;
-    left: 22rem;
+    top: 10rem;
+    left: 20rem;
     opacity: 0.2;
     background-color: black;
     border: none;
     position: absolute;
     z-index: 1;
+  }
+
+  .vertical2 {
+   width: 0.2rem;
+        top: 30rem;
+        left: 20rem;
+        max-height: 830px;
+  }
+
+  .vertical3 {
+    width: 0.2rem;
+    top: 92rem;
+    left: 20rem;
+  }
+
+  .text_about_us p:first-child {
+    margin-left: 14rem;
+    margin-top: 12rem;
+    width: 22%;
+    font-weight: 400;
+  }
+
+  .text_about_us p:nth-child(2) {
+    margin-left: 24rem;
+    margin-top: 2rem;
+    width: 24%;
+  }
+
+  .text_about_us p:last-child {
+    margin-left: 13.5rem;
+    margin-top: 1rem;
+    width: 24%;
+  }
+
+  #work_with_us {
+    background-color: var(--primary-color);
+    margin-top: 51rem;
+    color: var(--second-color);
+  } 
+
+  .title_work {
+    font-weight: 500;
+    letter-spacing: -3px;
+    gap: 2rem;
+    font-size: 5rem;
+    margin: 10rem 0rem 6rem 13rem;
+  }
+
+  .work_arrow img {
+    width: 5rem;
+    margin-right: 2rem;
+    margin-top: -0.8rem;
+  }
+
+  .hello p {
+    margin-left: 19rem;
+  }
+
+  .name p, .email p, .project p, .hello p {
+    font-size: 5rem;
+  }
+
+  .name input, .email input, .project input {
+    height: 4rem;
+    font-size: 1rem;
+  }
+
+  .name input {
+    width: 28rem;
+  }
+
+  .email input {
+    width: 17rem;
+  }
+
+  .project input {
+    width: 17.5rem;
+  }
+
+  .form_button {
+    font-size: 2.3rem;
+    margin: 2rem 0rem 2rem 47rem;
+    padding: 1rem;
+    width: 7.5rem;
+    letter-spacing: -2px;
+  }
+
+  #opinions {
+    height: 130vh;
+  }
+
+  .opinion1, .opinion2, .opinion3, .opinion4, .opinion5 {
+    width: 22.5rem;
+    height: 31rem;
+    padding: 2rem 2rem;
+  }
+
+  .brand {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin-top: 0.3rem;
 }
 
-.text_about_us p:nth-child(2) {
-    margin-left: 28rem;
-        margin-top: 2rem;
-        width: 24%;
+.star-o {
+    color: var(--second-color);
+    font-size: 1.3rem;
+    margin: 0;
 }
 
-.text_about_us p:last-child {
-    margin-left: 15.3rem;
-        margin-top: 2rem;
-        width: 22%;
+.review {
+    font-size: 1.2rem;
+    line-height: 1.3;
+    letter-spacing: -0.5px;
+    margin-top: 1rem;
+    color: var(--second-color);
 }
 
-#about_us {
+#foot .top {
+    margin-top: -3rem;
+    gap: 20rem;
+}
+
+.text_top1 p, .text_top2 p, .text_top3 p {
+    font-size: 4.5rem;
+    letter-spacing: -5px;
+}
+
+.text_middle .icon_top p {
+    font-size: 5rem;
+    font-weight: 500;
+    letter-spacing: -2px;
+}
+
+#foot .text_middle {
     position: relative;
-    height: 57rem;
+    top: 2rem;
+    z-index: 1;
 }
 
-.text_about_us {
-    gap: 27rem;
+.text_top3 p span img {
+    width: 4rem;
+    filter: invert(1);
+}
+
+.text_middle .icon_top img {
+    width: 3.7rem;
+    margin-top: -1rem;
+    height: 4rem;
+}
+
+.text_middle .icon_top p {
+    font-size: 4.5rem;
+    font-weight: 500;
+    letter-spacing: -2px;
+}
+
+.text_bottom {
+    width: 96.5%;
+    margin: -3rem 0rem 2rem 1rem;
+    font-size: 1.1rem;
 }
 
 }
