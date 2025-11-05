@@ -163,7 +163,7 @@ header {
   color: var(--second-color);
   margin: 0px;
   padding: 0px;
-  height: 68rem;
+  height: 85rem;
   max-width: 100%;    
 }
 
@@ -313,9 +313,8 @@ header {
 
 .text_header {
   display: flex;
-  margin-top: -5rem;
  gap: clamp(2rem, 24vw, 34rem);line-height: 0.8;
-  margin-bottom: 0rem;
+ margin: 13rem 0rem 0rem 2rem;
   flex-direction: row;
   align-items: flex-end;
 }
@@ -1009,7 +1008,7 @@ transition: opacity 0.8s ease, transform 0.8s ease;
 #foot {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 93vh;
   padding: 4rem;
   overflow: hidden;
   color: white;
@@ -1160,7 +1159,7 @@ transition: opacity 0.8s ease, transform 0.8s ease;
 /* --------------- MEDIA QUERYS ---------------  */
 
 
-@media (max-width: 1800px) {
+@media (max-width: 1799px) {
   .text_header {
     gap: clamp(2rem, 24vw, 34rem);
   }
@@ -1201,7 +1200,7 @@ transition: opacity 0.8s ease, transform 0.8s ease;
 }
 }
 
-@media (max-width: 1700px) {
+@media (max-width: 1699px) {
   .text_header {
     gap: clamp(2rem, 20vw, 34rem);
   }
@@ -1250,7 +1249,7 @@ transition: opacity 0.8s ease, transform 0.8s ease;
 
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1599px) {
   .text_header {
     gap: clamp(2rem, 25vw, 34rem);
     margin-top: 0rem;
@@ -1327,7 +1326,7 @@ transition: opacity 0.8s ease, transform 0.8s ease;
   }
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1499px) {
   .text_header {
     gap: clamp(2rem, 20vw, 34rem);
   }
@@ -1427,7 +1426,7 @@ transition: opacity 0.8s ease, transform 0.8s ease;
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1399px) {
   .text_header {
     gap: clamp(2rem, 15vw, 34rem);
   }
@@ -1592,7 +1591,7 @@ transition: opacity 0.8s ease, transform 0.8s ease;
 
 
 
-@media (max-width: 1300px) {
+@media (max-width: 1299px) {
   .text_header {
     gap: clamp(2rem, 19vw, 34rem);
     margin-top: 5rem;
@@ -1684,7 +1683,7 @@ transition: opacity 0.8s ease, transform 0.8s ease;
 
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .text_header {
     gap: clamp(2rem, 14vw, 34rem);
   }
@@ -1788,10 +1787,24 @@ transition: opacity 0.8s ease, transform 0.8s ease;
 
 }
 
-@media (max-width: 1100px) {
-  .text_header {
-  gap: clamp(2rem, 6vw, 34rem);
+@media (max-width: 1099px) {
+
+
+  header {
+    height: 86rem;
   }
+
+  .text_header {
+    gap: clamp(0rem, 1vw, 34rem);
+        margin-top: 22rem;
+
+  }
+
+  .logo {
+    margin: -3rem 0rem 0rem 2rem;
+    width: 100%;
+    max-width: 31rem;
+}
 
   .text {
     margin: 14rem 25rem 19rem 23rem;
@@ -2289,9 +2302,13 @@ transition: opacity 0.8s ease, transform 0.8s ease;
 
 @media (max-width: 900px) {
 
+
+  header {
+    height: 74rem;
+}
   .text_header {
-    margin-top: 14rem;
-    gap: 7rem;
+    margin-top: 19rem;
+    gap: 3rem;
     line-height: 0.4;
   }
 
@@ -2514,7 +2531,7 @@ transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 820px) {
    .texth_1 p {
     visibility: hidden;
   }
@@ -2525,8 +2542,8 @@ transition: opacity 0.8s ease, transform 0.8s ease;
   }
 
   .text_header {
-    margin-top: 14rem;
-    gap: 1rem;
+    margin-top: 18rem;
+    gap: 0rem;
   }
 
   #work > p {
@@ -3158,6 +3175,10 @@ transition: opacity 0.8s ease, transform 0.8s ease;
         filter: invert(1);
     }
 
+        #foot .img_footer {
+        margin-left: 0.6rem;
+    }
+
         #foot {
         height: 48vh;
         padding: 3rem;
@@ -3184,4 +3205,399 @@ transition: opacity 0.8s ease, transform 0.8s ease;
     }
 }
 
+
+@media (max-width: 375px) {
+
+  .cookie-banner {
+        max-width: 15rem;
+        padding: 1.75rem;
+    }
+
+    .cookie-banner h3 {
+        font-size: 1rem;
+    }
+
+    .cookie-banner p {
+        font-size: 0.7rem;
+    }
+
+        .btn {
+        padding: 0.85rem 1.5rem;
+        font-size: 0.7rem;
+    }
+
+    .close-btn {
+        top: 1rem;
+        right: 0.5rem;
+        font-size: 2rem;
+        width: 2rem;
+        height: 2rem;
+    }
+  
+  .logo {
+        margin: -17rem 0rem 0rem 2rem;
+        max-width: 9rem;
+    }
+
+        .menu-toggle {
+        margin-left: 2rem;
+        margin-bottom: 1.2rem;
+            width: 5rem;
+        font-size: 0.9rem;
+    }
+
+    .navbar {
+        width: 8.5rem;
+        height: 7.5rem;
+            top: -24rem;
+            padding: 0.9rem;
+        left: clamp(1rem, 100vw - 9.5rem, 45rem);
+    }
+
+         .menu-mobile {
+        list-style: none;
+        margin: 0;
+        margin-top: -1rem;
+        padding: 0;
+        line-height: 0.05;
+        font-size: 0.9rem;
+    }
+
+        .texth_2 p:first-child {
+        margin-left: 7rem;
+        margin-bottom: 1.4rem;
+    }
+
+
+        .texth_2 p {
+        font-size: 1.8rem;
+    }
+
+    .texth_2 p:last-child {
+        margin-left: 12rem;
+    }
+
+        .icon-img {
+        width: 1.5rem;
+    }
+
+    .text_header {
+        margin-top: -4rem;
+        gap: 0rem;
+        margin-left: -13.5rem;
+    }
+
+        header {
+        height: 42rem;
+    }
+
+        #work > p {
+        font-size: 2.5rem;
+        letter-spacing: -2px;
+    }
+
+        .marquework h1 {
+        font-size: 2.5rem;
+        font-weight: 300;
+        letter-spacing: -2px;
+    }
+
+        .title_know {
+        letter-spacing: -1px;
+        font-size: 1.7rem;
+        margin: 4rem 0rem 0rem 0rem;
+    }
+
+        .about_us_arrow img {
+        width: 1.7rem;
+        margin-top: -0.4rem;
+        margin-left: 0.5rem;
+    }
+
+    .text1 > p, .text > p {
+        font-size: 1.2rem;
+    }
+
+    .text1 {
+        margin: 11rem 25rem 8rem 6.5rem;
+        width: 46%;
+    }
+
+        .text {
+        margin: -2rem 25rem 14rem 6.5rem;
+        width: 48%;
+    }
+
+        .video_lola video {
+        margin-left: 5.5rem;
+        margin-bottom: 4rem;
+    }
+
+    .stat-title {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        margin-left: 0rem;
+        margin-top: 1.5rem;
+    }
+
+    
+    
+    .stat-card {
+      padding: 1rem;
+      text-align: left;
+      height: 11rem;
+      gap: 2rem;
+    }
+    .stat-number {
+      font-size: 6rem;
+      margin-left: 7rem;
+      margin-bottom: 1rem;
+      letter-spacing: -8px;
+    }
+    
+    .text-b {
+      font-size: 2.5rem;
+      margin: 3rem 0rem 3rem 7rem;
+    }
+    
+        .one {
+        margin-left: 10rem;
+    }
+    .title_about_us {
+        letter-spacing: -1px;
+        font-size: 1.7rem;
+        margin: 9rem 0rem 0rem 2rem;
+    }
+
+        .title_about_us a img {
+        width: 1.8rem;
+        margin-left: 1rem;
+        margin-top: -0.2rem;
+    }
+
+        #about_us {
+        position: relative;
+        height: 24rem;
+    }
+
+    .text_about_us p {
+        font-size: 0.8rem;
+        letter-spacing: 0px;
+    }
+
+        .vertical1, .vertical2, .vertical3 {
+        left: 8rem;
+    }
+
+        .vertical1 {
+        width: 0.1rem;
+        top: 5rem;
+        opacity: 0.2;
+    
+    }
+
+        .vertical2 {
+        width: 0.1rem;
+        top: 17rem;
+        max-height: 400px;
+    }
+
+    .vertical3 {
+        width: 0.1rem;
+        top: 47rem;
+    }
+
+        .text_about_us {
+        gap: 12.5rem;
+    }
+
+    #about_us .logo_fondo {
+    top: 13rem;
+    width: 100%;
+    height: 114%;
+
+    }
+
+        #work_with_us {
+        margin-top: 36rem;
+    }
+
+        .text_about_us p:first-child {
+        margin-left: 4rem;
+        margin-top: 8rem;
+        width: 36%;
+        font-weight: 400;
+    }
+
+        .text_about_us p:nth-child(2) {
+        margin-left: 10rem;
+        margin-top: -1rem;
+        width: 36%;
+    }
+
+    .text_about_us p:last-child {
+        margin-left: 4rem;
+        margin-top: -0.5rem;
+        width: 34%;
+    }
+
+    .title_work {
+        font-weight: 500;
+        letter-spacing: -1px;
+        gap: 0rem;
+        font-size: 2rem;
+        margin: 0rem 0rem 4rem 2rem;
+    }
+
+    .work_arrow img {
+        width: 2rem;
+        height: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 0rem;
+    }
+
+    .form {
+        letter-spacing: -2px;
+    }
+
+    .hello p {
+        margin-left: 10rem;
+    }
+
+        .name input, .email input, .project input {
+        height: 2rem;
+        font-size: 0.7rem;
+        margin-bottom: 0.5rem;
+        margin-top: -0.5rem;
+        text-align: end;
+        width: 21rem;
+    }
+
+        .form_button {
+        font-size: 1.7rem;
+        margin: 0rem 0rem 2rem 16rem;
+        padding: 0.5rem;
+        width: 5rem;
+        letter-spacing: -1px;
+    }
+
+    #opinions {
+        height: 241vh;
+        padding: 1rem;
+    }
+
+    .h1_opinions h1 {
+        font-size: 2rem;
+        width: 90%;
+    }
+
+        .opinion1, .opinion2, .opinion3, .opinion4, .opinion5 {
+        width: 17rem;
+        height: 21rem;
+        padding: 1rem 2rem;
+    }
+
+        .in {
+        gap: 1rem;
+    } 
+
+        .review {
+        font-size: 0.9rem;
+    }
+
+    .five {
+        margin-left: 0rem;
+        margin-top: -2rem;
+        flex-wrap: wrap;
+    }
+
+    .marquefooter-r {
+        margin-top: 3rem;
+        margin-bottom: -1.5rem;
+    }
+
+    .marquefooter-r h1, .marquefooter-l h1 {
+        font-size: 2.5rem;
+        font-weight: 300;
+        letter-spacing: -3px;
+    }
+
+
+        #foot .img_footer {
+        margin-left: 0.4rem;
+    }
+
+        .name p, .email p, .project p, .hello p {
+        font-size: 2.2rem;
+    }
+
+    .text_top1 p, .text_top2 p, .text_top3 p {
+        font-size: 2rem;
+        letter-spacing: -2px;
+    }
+
+    .in {
+    align-items: center;
+}
+
+        .brand {
+        font-size: 1rem;
+        text-transform: uppercase;
+        margin-top: 0.3rem;
+    }
+
+    .text_middle .icon_top p {
+        font-size: 2rem;
+        font-weight: 500;
+        letter-spacing: -1px;
+    }
+
+        .text_middle .icon_top img {
+        width: 1.5rem;
+        margin-top: -1.2rem;
+        margin-left: -1rem;
+        height: auto;
+    }
+
+    .text_top3 p span img {
+        width: 2rem;
+        filter: invert(1);
+    }
+
+        .text_bottom {
+        width: 93%;
+        margin: -2.5rem 0rem 2rem 1rem;
+        font-size: 0.5rem;
+    }
+
+    .text_bottom ul li {
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+    #foot .top {
+        margin-top: -2.5rem;
+        gap: 6.5rem;
+    }
+
+.text_bottom ul {
+        gap: 0.5rem;
+    }
+
+    #foot .text_middle {
+        position: relative;
+        top: 2rem;
+        z-index: 1;
+    }
+
+        #foot {
+        height: 43vh;
+        padding: 1.5rem;
+        margin-top: -2rem;
+    }
+    
+
+
+  }
   
