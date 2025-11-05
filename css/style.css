@@ -2511,5 +2511,677 @@ transition: opacity 0.8s ease, transform 0.8s ease;
     margin: -3rem 0rem 2rem 1rem;
     font-size: 1.1rem;
 }
-
 }
+
+
+@media (max-width: 800px) {
+   .texth_1 p {
+    visibility: hidden;
+  }
+
+  .logo {
+    margin: -10rem 0rem 0rem 2rem;
+    max-width: 22rem;
+  }
+
+  .text_header {
+    margin-top: 14rem;
+    gap: 1rem;
+  }
+
+  #work > p {
+    font-size: 4.5rem;
+    letter-spacing: -5px;
+  }
+  .marquework h1 {
+    font-size: 4.5rem;
+    font-weight: 300;
+    letter-spacing: -6px;
+  }
+
+  .title_know {
+    letter-spacing: -3px;
+    font-size: 3.5rem;
+    margin: 4rem 0rem 0rem 0rem;
+  }
+
+  .about_us_arrow img {
+    width: 3.4rem;
+    margin-left: 1rem;
+  }
+
+  .text1 {
+    margin: 17rem 25rem 10rem 16rem;
+  }
+
+  .text {
+    margin: 0rem 25rem 21rem 16rem;
+  }
+
+  .text1 > p, .text > p {
+    font-size: 2rem;
+  } 
+
+  .video_lola video {
+    margin-left: 11.5rem;
+    margin-bottom: 10rem;
+  }
+
+  .stat-number {
+    font-size: 7rem;
+    letter-spacing: -8px;
+  }
+
+  .stat-card {
+    padding: 1rem;
+    text-align: left;
+    height: 15rem;
+    gap: 2rem;
+  } 
+
+  .px-3 {
+    padding-right: 0.5rem !important;
+    padding-left: 0.5rem !important;
+  }  
+
+  .text-b {
+    font-size: 4rem;
+    margin: 3rem 0rem 3rem 23rem;
+  }
+
+  .text_about_us p:first-child {
+    margin-left: 14rem;
+    margin-top: 12rem;
+    width: 23%;
+    font-weight: 400;
+  }
+
+  .text_about_us p:last-child {
+    margin-left: 14rem;
+    margin-top: 0rem;
+    width: 24%;
+  } 
+
+  .title_work {
+    font-weight: 500;
+    letter-spacing: -2px;
+    gap: 2rem;
+    font-size: 4rem;
+    margin: 10rem 0rem 6rem 13rem;  
+  }
+
+  .work_arrow img {
+    width: 4rem;
+    margin-right: 2rem;
+    margin-top: -0.8rem;
+  }
+
+  .name p, .email p, .project p, .hello p {
+    font-size: 4rem;
+  }
+
+  .name input, .email input, .project input {
+    height: 3rem;
+    font-size: 1rem;
+  }
+
+  .name input {
+    width: 25.5rem;
+  }
+
+  .email input {
+    width: 16rem; 
+  }
+
+  .project input {
+    width: 16.5rem;
+  }
+
+  .form_button {
+    font-size: 2.3rem;
+    margin: 2rem 0rem 2rem 39.5rem;
+    padding: 1rem;
+    width: 7.5rem;
+    letter-spacing: -2px;
+  } 
+
+  .h1_opinions h1 {
+    font-size: 3rem;
+    width: 60%;
+    line-height: 1;
+    margin-left: 2rem;
+    text-align: left;
+    letter-spacing: -2px;
+  }
+
+  .opinion1, .opinion2, .opinion3, .opinion4, .opinion5 {
+    width: 20.5rem;
+    height: 31rem;
+    padding: 2rem 2rem;
+  }
+
+  .opinion1 {
+    transform: rotate(-6deg);
+  }
+
+  .opinion4 {
+    transform: rotate(5deg);
+  }
+
+  .review {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+    margin-top: 1rem;
+    color: var(--second-color);
+  }
+
+  .brand {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-top: 0.3rem;
+  }
+
+  .star-o {
+    color: var(--second-color);
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  .marquefooter-r h1, .marquefooter-l h1 {
+    font-size: 4.5rem;
+    font-weight: 300;
+    letter-spacing: -8px;
+  }
+
+  #foot .top {
+    margin-top: -3rem;
+    gap: 13rem;
+  }
+
+  #foot {
+    height: 53vh;
+    padding: 3rem;
+  }
+
+  .text_middle .icon_top img {
+    width: 3rem;
+    margin-top: -1.2rem;
+    margin-left: -1rem;
+    height: 3rem;
+  }
+
+  .text_middle .icon_top p {
+    font-size: 4rem;
+    font-weight: 500;
+    letter-spacing: -2px;
+  }
+
+  .text_bottom {
+    width: 96%;
+    margin: -3rem 0rem 2rem 1rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .text_header {
+        margin-top: 14rem;
+        gap: 0rem;
+        margin-left: -5rem;
+    }
+
+        #work > p {
+        font-size: 4.5rem;
+        letter-spacing: -5px;
+    }
+
+        .marquework h1 {
+        font-size: 4.5rem;
+        font-weight: 300;
+        letter-spacing: -6px;
+    }
+
+        .title_know {
+        letter-spacing: -3px;
+        font-size: 3.5rem;
+        margin: 4rem 0rem 0rem 0rem;
+    }
+
+    .about_us_arrow img {
+        width: 3.4rem;
+        margin-left: 1rem;
+    }
+
+        .text1 {
+        margin: 17rem 25rem 8rem 14rem;
+                width: 41%;
+    }
+
+    .text {
+        margin: 0rem 25rem 19rem 14rem;
+                width: 42%;
+
+    }
+
+        .video_lola video {
+        margin-left: 10rem;
+        margin-bottom: 10rem;
+    }
+
+        .stat-number {
+        font-size: 7rem;
+        margin-left: 23rem;
+        letter-spacing: -8px;
+    }
+
+    .one {
+          margin-left: 27rem;
+    }
+
+        .stat-title {
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+        margin-left: 1rem;
+        margin-top: 1.5rem;
+    }
+
+        .text-b {
+        font-size: 4rem;
+        margin: 3rem 0rem 3rem 18rem;
+    }
+
+    .vertical1, .vertical2, .vertical3 {
+    left: 19rem;
+  }
+
+      .text_about_us p:first-child {
+        margin-left: 13rem;
+        margin-top: 12rem;
+        width: 27%;
+        font-weight: 400;
+    }
+
+        .text_about_us p:nth-child(2) {
+        margin-left: 21rem;
+        margin-top: 2rem;
+        width: 28%;
+    }
+
+        .text_about_us p:last-child {
+        margin-left: 12.5rem;
+        margin-top: 1rem;
+        width: 31%;
+    }
+
+        .title_work {
+        font-weight: 500;
+        letter-spacing: -2px;
+        gap: 2rem;
+        font-size: 4rem;
+        margin: 10rem 0rem 6rem 8rem;
+    }
+
+    .work_arrow img {
+        width: 3.8rem;
+        margin-right: 2rem;
+        margin-top: -0.8rem;
+    }
+
+    .name input, .email input, .project input {
+        height: 3rem;
+        font-size: 0.8rem;
+    }
+
+    .name input {
+        width: 21.5rem;
+    }
+
+        .email input {
+        width: 13rem;
+    }
+
+    .project input {
+        width: 13.5rem;
+    }
+
+        .name p, .email p, .project p, .hello p {
+        font-size: 3.8rem;
+    }
+
+        .hello p {
+        margin-left: 15rem;
+    }
+
+    .form {
+    letter-spacing: -4px;
+    }
+
+    .form_button {
+        font-size: 2.3rem;
+        margin: 2rem 0rem 2rem 35.5rem;
+        padding: 0.5rem;
+        width: 6.5rem;
+        letter-spacing: -2px;
+    }
+
+        #opinions {
+        height: 135vh;
+        padding: 3rem 2rem;
+    }
+
+    .opinion1, .opinion2, .opinion3, .opinion4, .opinion5 {
+        width: 18rem;
+        height: 29rem;
+        padding: 2rem 2rem;
+    }
+
+        .review {
+        font-size: 1.1rem;
+        line-height: 1.2;
+        letter-spacing: -0.5px;
+    }
+
+    .star-o {
+        color: var(--second-color);
+        font-size: 1rem;
+        margin: 0;
+    }
+
+        .brand {
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        margin-top: 0.3rem;
+    }
+
+    .in {
+    gap: 1rem;
+}
+
+    .marquefooter-r {
+        margin-top: 3rem;
+        margin-bottom: -2rem;
+    }
+
+        #foot .top {
+        margin-top: -3rem;
+        gap: 11rem;
+    }
+
+        .text_top1 p, .text_top2 p, .text_top3 p {
+        font-size: 4rem;
+        letter-spacing: -5px;
+    }
+
+        #foot {
+        height: 51vh;
+        padding: 3rem;
+        margin-top: -3rem;
+    }
+
+        .text_bottom {
+        width: 96%;
+        margin: -3rem 0rem 2rem 1rem;
+        font-size: 1rem;
+    }
+
+    
+}
+
+
+@media (max-width: 600px) {
+
+
+  .menu-toggle {
+    margin-left: 3rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.3em;
+  
+}
+
+.navbar {
+    width: 13rem;
+    height: 11rem;
+    left: clamp(1rem, 100vw - 14rem, 45rem);
+}
+
+.menu-mobile {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 0.6;
+    font-size: 1.3rem;
+}
+
+      .logo {
+        margin: -11rem 0rem 0rem 2rem;
+        max-width: 17rem;
+    }
+
+      .cookie-banner h3 {
+        font-size: 1.4rem;
+    }
+
+        .cookie-banner p {
+        font-size: 1.2rem;
+    }
+
+        .cookie-banner {
+        max-width: 33rem;
+    }
+
+    .text_header {
+        margin-top: 14rem;
+        gap: 0rem;
+        margin-left: -10rem;
+    }
+
+        .text1 > p, .text > p {
+        font-size: 1.7rem;
+    }
+
+    .text1 {
+        margin: 17rem 25rem 8rem 12rem;
+      }
+
+          .text {
+        margin: 0rem 25rem 19rem 12rem;
+        width: 42%;
+    }
+
+        .video_lola video {
+        margin-left: 8.5rem;
+        margin-bottom: 10rem;
+    }
+
+    
+    .stat-number {
+      font-size: 7rem;
+      margin-left: 18rem;
+      letter-spacing: -8px;
+    }
+    
+    .one {
+    margin-left: 21rem;
+}
+    .text-b {
+        font-size: 3.5rem;
+        margin: 3rem 0rem 3rem 15rem;
+    }
+
+        #about_us {
+        position: relative;
+        height: 40rem;
+    }
+
+       .title_about_us {
+        letter-spacing: -2px;
+        font-size: 2.7rem;
+        margin: 15rem 0rem 0rem 3rem;
+    }
+
+        .title_about_us a img {
+        width: 2.8rem;
+        margin-left: 1rem;
+        margin-top: -0.2rem;
+    }
+
+        .vertical1, .vertical2, .vertical3 {
+        left: 12rem;
+      }
+
+      .text_about_us p {
+        font-size: 1.4rem;
+
+    }
+
+        .text_about_us {
+        gap: 20.5rem;
+    }
+
+        .vertical2 {
+        width: 0.2rem;
+        top: 28rem;
+        max-height: 610px;
+    }
+
+    .vertical3 {
+        width: 0.2rem;
+        top: 75rem;
+    }
+
+
+        .text_about_us p:first-child {
+        margin-left: 6.5rem;
+        margin-top: 13rem;
+        width: 31%;
+        font-weight: 400;
+    }
+        .text_about_us p:last-child {
+        margin-left: 6.5rem;
+        margin-top: -8rem;
+        width: 31%;
+    }
+
+        .text_about_us p:nth-child(2) {
+        margin-left: 15rem;
+        margin-top: 2rem;
+        width: 28%;
+    }
+
+        .work_arrow img {
+        width: 3.4rem;
+        margin-left: -1rem;
+        margin-right: 2rem;
+        margin-top: -0.8rem;
+    }
+        .title_work {
+        font-weight: 500;
+        letter-spacing: -2px;
+        gap: 2rem;
+        font-size: 3.4rem;
+        margin: 10rem 0rem 6rem 6rem;
+    }
+
+        .hello p {
+        margin-left: 17rem;
+    }
+
+    .name, .email, .project {
+    gap: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+    .name input, .email input, .project input {
+        height: 3rem;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        margin-top: -1rem;
+        text-align: end;
+        width: 35rem;
+    }
+
+        .form_button {
+        font-size: 2.3rem;
+        margin: 2rem 0rem 2rem 28.5rem;
+        padding: 0.5rem;
+        width: 6.5rem;
+        letter-spacing: -2px;
+    }
+
+        .marquefooter-r h1, .marquefooter-l h1 {
+        font-size: 4rem;
+        font-weight: 300;
+        letter-spacing: -6px;
+    }
+
+    .h1_opinions h1 {
+        font-size: 3rem;
+        width: 80%;
+    }
+
+        #opinions {
+        height: 215vh;
+        padding: 3rem 2rem;
+    }
+
+    .opinion1, .opinion2, .opinion3, .opinion4, .opinion5 {
+        width: 24rem;
+        height: 26rem;
+        padding: 2rem 2rem;
+    }
+
+        .review {
+        font-size: 1.2rem;
+    }
+
+    .work_arrow img {
+        width: 3.4rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: -0.8rem;
+    }
+
+        #foot .top {
+        margin-top: -3rem;
+        gap: 7rem;
+    }
+
+        .text_top1 p, .text_top2 p, .text_top3 p {
+        font-size: 3.5rem;
+        letter-spacing: -4px;
+    }
+
+    .text_top3 p span img {
+        width: 3rem;
+        filter: invert(1);
+    }
+
+        #foot {
+        height: 48vh;
+        padding: 3rem;
+        margin-top: -3rem;
+    }
+
+    .text_middle .icon_top p {
+        font-size: 3.5rem;
+        font-weight: 500;
+        letter-spacing: -2px;
+    }
+
+    .text_middle .icon_top img {
+        width: 2.5rem;
+        margin-top: -1.2rem;
+        margin-left: -0.5rem;
+        height: 2.8rem;
+    }
+
+        .text_bottom {
+        width: 96%;
+        margin: -2rem 0rem 2rem 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+  
