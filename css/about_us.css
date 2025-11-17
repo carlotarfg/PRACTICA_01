@@ -35,7 +35,6 @@ html, body {
     background-color: var(--primary-color);
     margin: 0px;
     padding: 0px;
-    height: 68rem;
     max-width: 100%;    
 }
 
@@ -89,19 +88,17 @@ header {
 }
 
 
-
-
 /* ----- MENU RESPONSIVE  */
 
 
-.navbar-a {
+.navbar {
   width: 15rem;
   height: 12rem;
   padding: 1.2rem;
 
-  position: relative;
-  left: clamp(1rem, 100vw - 18rem, 45rem);
-  top: -19rem;
+  left: clamp(1rem, 100vw - 16rem, 45rem);
+  
+  top: -22rem;
   box-sizing: border-box;
 
   transition: 
@@ -128,7 +125,7 @@ header {
   text-decoration: none;
 }
 
-.menu-toggle-a {
+.menu-toggle {
   background: none;
   border: none;
   width: 8rem;
@@ -146,7 +143,7 @@ header {
   gap: 0.5rem;
 }
 
-.menu-mobile-a {
+.menu-mobile {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -159,32 +156,32 @@ header {
   transition: max-height 0.4s ease-in-out;
 }
 
-.menu-mobile-a li {
+.menu-mobile li {
   margin: 1.2rem 0; 
 }
 
-.menu-mobile-a a {
+.menu-mobile a {
   color: var(--second-color);
   text-decoration: none;
   display: block;
 }
 
-.menu-mobile-a.active {
+.menu-mobile.active {
   max-height: 150px; 
 }
 
 
 @media (min-width: 1000px) {
-  .menu-toggle-a {
+  .menu-toggle {
     display: none !important;
   }
-  .menu-mobile-a {
+  .menu-mobile {
     display: none !important;
   }
 }
 
 @media (max-width: 1000px) {
-  .menu-toggle-a {
+  .menu-toggle {
     display: flex;
     justify-content: center;
   }
@@ -193,20 +190,22 @@ header {
     display: none;
   }
 
-  .navbar-a {
+  .navbar {
     display: block; 
   }
 }
+
 /* -------------  */
 
 .logo {
-  margin: 2rem 0rem 14rem 2rem;
+  margin: 2rem 0rem 1rem 2rem;
   width: 10%;
 
 }
 /* -------------------------------  */
 
 /* ---------- MARQUESINA ---------- */
+/* MARQUEE  */
 
 .marquefooter-r,
 .marquefooter-l {
@@ -216,6 +215,7 @@ header {
 }
 
 .marquefooter-r {
+  /* margin-top: 10rem; */
   margin-bottom: -2rem;
 }
 
@@ -267,6 +267,8 @@ header {
 .marquee-container {
   position: relative;
 }
+
+
 
 .about {
   position: absolute;
@@ -355,9 +357,13 @@ header {
 
 
 #work_with_us {
-  background-color: var(--primary-color);
-  margin-top: 60rem;
+  background-color: var(--second-color);
+  margin-top: 1rem;
   color: var(--second-color);
+}
+
+#work_with_us p {
+  color: var(--primary-color);
 }
 
 .title_work {
@@ -396,7 +402,8 @@ header {
 }
 
 .name p, .email p, .project p, .hello p {
-  font-size: 8rem;
+  color: var(--primary-color);
+  font-size: 7rem;
   margin-bottom: 0rem;
 }
 
@@ -410,7 +417,7 @@ header {
   text-align: center;
   font-size: 2rem;
   border: 0px;
-  border-bottom: 1px white solid;
+  border-bottom: 1px solid var(--primary-color);
 }
 
 .name input {
@@ -427,13 +434,13 @@ header {
 
 .form_button {
   font-size: 3rem;
-  margin: 4rem 0rem 3rem 108rem;
-  color: #000000;
+  margin: 4rem 0rem 3rem 84rem;
+  color: var(--second-color);
   padding: 1rem;
   width: 9rem;
   letter-spacing: -2px;
   border-radius: 0.5rem;
-  background-color: white;
+  background-color: var(--primary-color);
   text-decoration: none;
 
 }
@@ -486,7 +493,7 @@ header {
 
 .marquefooter-r h1,
 .marquefooter-l h1 {
-  color: #1d1d1b2b;
+  color: var(--second-color);
   font-size: 7rem;
   font-weight: 300;
   white-space: nowrap;
