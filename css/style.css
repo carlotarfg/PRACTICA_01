@@ -191,6 +191,13 @@ header {
 .menu > li > a {
   color: var(--second-color);
   text-decoration: none;
+}
+
+
+.logo {
+  margin: -2rem 0rem 0rem 2rem;
+  width: 100%;
+  max-width: 35rem;
 
 }
 
@@ -304,12 +311,6 @@ header {
 
 /* -------------  */
 
-.logo {
-  margin: -2rem 0rem 0rem 2rem;
-  width: 100%;
-  max-width: 35rem;
-
-}
 
 .text_header {
   display: flex;
@@ -1146,6 +1147,12 @@ transition: opacity 0.8s ease, transform 0.8s ease;
   font-weight: 400;
   opacity: 0.9;
 }
+
+
+
+
+
+
 
 
 
