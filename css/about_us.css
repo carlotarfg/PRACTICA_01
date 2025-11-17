@@ -207,7 +207,6 @@ header {
 /* -------------------------------  */
 
 /* ---------- MARQUESINA ---------- */
-/* MARQUEE  */
 
 .marquefooter-r,
 .marquefooter-l {
@@ -217,7 +216,6 @@ header {
 }
 
 .marquefooter-r {
-  /* margin-top: 10rem; */
   margin-bottom: -2rem;
 }
 

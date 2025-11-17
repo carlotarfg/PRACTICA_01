@@ -85,12 +85,11 @@ header {
 }
 
 
-.logo {
-  margin: -2rem 0rem 0rem 2rem;
-  width: 100%;
-  max-width: 35rem;
-  filter: invert(1);
 
+.logo {
+  margin: 2rem 0rem 14rem 2rem;
+  width: 10%;
+  filter: invert(1);
 }
 
 /* ----- MENU RESPONSIVE  */
