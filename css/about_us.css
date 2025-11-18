@@ -351,6 +351,49 @@ header {
   }
 }
 
+/* THE TEAM  */
+
+#the_team h1 {
+font-size: 7rem;
+margin-left: 5rem;
+margin-bottom: 3rem;
+}
+
+#the_team .team {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  position: relative;
+}
+
+#the_team .team img {
+  width: 20%;
+  transform-origin: center center;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+#the_team .team img:nth-child(1) {
+  transform: rotate(-7deg);
+  z-index: 1;
+  margin-right: -40px; 
+}
+
+#the_team .team img:nth-child(2) {
+  transform: rotate(6deg);
+  z-index: 2;
+  margin-left: -40px; }
+
+#the_team .team img:hover {
+  transform: rotate(0deg) scale(1.03);
+  z-index: 3;
+}
+
+.textito
+
+.gray {
+  color:#bfbfbf;
+}
 
 
 /* WORK WITH US  */
