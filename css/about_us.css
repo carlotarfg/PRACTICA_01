@@ -26,16 +26,17 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Inter Tight', sans-serif;
-    max-width: 100%;    
+    max-width: 100%;  
+
 }
 
 
-html, body {
-    max-width: 100%;    
+html, body {  
     background-color: var(--primary-color);
     margin: 0px;
-    padding: 0px;
-    max-width: 100%;    
+    padding: 0px;  
+    overflow-x: hidden;
+
 }
 
 body, p, h1, h2, h3, h4, h5, h6, li, a, span, label, input, textarea, button {
@@ -421,13 +422,10 @@ margin-bottom: 3rem;
 /* WORK WITH US  */
 
 
+
 #work_with_us {
   background-color: var(--second-color);
-  margin-top: 1rem;
-  color: var(--second-color);
-}
-
-#work_with_us p {
+  margin-top: 60rem;
   color: var(--primary-color);
 }
 
@@ -440,6 +438,10 @@ margin-bottom: 3rem;
   font-size: 8rem;
   margin: 10rem 0rem 6rem 13rem;
   justify-content: flex-end;
+}
+
+.title_work p {
+  color: var(--primary-color);
 }
 
 
@@ -467,7 +469,7 @@ margin-bottom: 3rem;
 
 .name p, .email p, .project p, .hello p {
   color: var(--primary-color);
-  font-size: 7rem;
+  font-size: 8rem;
   margin-bottom: 0rem;
 }
 
@@ -481,7 +483,7 @@ margin-bottom: 3rem;
   text-align: center;
   font-size: 2rem;
   border: 0px;
-  border-bottom: 1px solid var(--primary-color);
+  border-bottom: 1px var(--primary-color);
 }
 
 .name input {
@@ -498,7 +500,7 @@ margin-bottom: 3rem;
 
 .form_button {
   font-size: 3rem;
-  margin: 4rem 0rem 3rem 80rem;
+  margin: 4rem 0rem 3rem 108rem;
   color: var(--second-color);
   padding: 1rem;
   width: 9rem;
@@ -510,7 +512,7 @@ margin-bottom: 3rem;
 }
 
 .form input {
-  color: #fff !important;
+  color: #bfbfbf !important;
 }
 
 .form input::placeholder {
@@ -575,8 +577,8 @@ margin-bottom: 3rem;
   font-size: 3rem;
   line-height: 1;
   color: var(--second-color);
-  transform: translateY(30%);
-}
+  transform: translateY(50%);
+} 
 
 .step.top p {
   transform: translateY(-4rem);
@@ -717,7 +719,6 @@ margin-bottom: 3rem;
 
 .text_top3 p span img {
   width: 7rem;
-  filter: invert(1);
 }
 
 .text_top1 p,
