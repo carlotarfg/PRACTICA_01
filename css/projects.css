@@ -602,4 +602,122 @@ color: var(--primary-color);
      width: 95%;
      border-top: 3px solid var(--primary-color);
     margin-left: 3rem;
+    margin-bottom: 2rem;
 } 
+
+
+/* ---------  */
+
+
+        .project-card {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 84%;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        .position-relative {
+            position: relative;
+        }
+
+        .circle-link {
+           position: absolute;
+          top: 10px;
+          right: 10px;
+          background-color: #4a6cf7;
+          color: white;
+          width: 4rem;
+          height: 4rem;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          z-index: 10;
+          transition: background-color 0.3s ease;
+        }
+
+        .circle-link:hover {
+            background-color: #3a5bd9;
+        }
+
+        .arrow-icon {
+            width: 3rem;
+            height: fit-content;
+            filter: invert(1);
+        }
+
+        .project-title1,  .project-title2,  .project-title3,  .project-title4,  .project-title5 {
+            font-size: 3rem;
+            font-weight: 400;
+            letter-spacing: -2px;
+            color: #333;
+            margin: 0;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .tag {
+            background-color: #4a6cf7;
+            color: white;
+            padding: 0.5rem;
+            border-radius: 4px;
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-left: 1rem;
+            display: inline-block;
+            border: 1px black solid;
+            vertical-align: middle;
+        }
+
+        .project-info1 {
+          margin-top: 2rem;
+          display: flex;
+          gap: 26rem;
+          justify-content: space-between;
+        }
+
+
+        .project-info2 {
+          margin-top: 2rem;
+          display: flex;
+          gap: 6rem;
+          justify-content: space-between;
+        }
+        
+        .project-info3 {
+          margin-top: 2rem;
+          display: flex;
+          gap: 6rem;
+          justify-content: space-between;
+        }
+
+
+        .project-info4 {
+          margin-top: 2rem;
+          display: flex;
+          gap: 6rem;
+          justify-content: space-between;
+        }
+
+        .project-info5 {
+          margin-top: 2rem;
+          display: flex;
+          gap: 6rem;
+          justify-content: space-between;
+        }
+
+        .col-12 {
+          flex: 0 0 auto;
+          width: 100%;
+          margin-bottom: 3rem;
+          height: 90%;
+      }
+                      
