@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
       img2: "media/img/Rectangle 4.png",
       img3: "media/img/Rectangle 4.png"
     },
-    "MOTION GRAPHICS": {
+    "BRANDING": {
       img1: "media/img/Rectangle 6.png",
       img2: "media/img/Rectangle 6.png",
       img3: "media/img/Rectangle 6.png"

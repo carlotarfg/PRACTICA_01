@@ -254,9 +254,11 @@ color: var(--primary-color);
 }
 
 .text1 p {
-    width: 38rem;
-    margin: 15rem 0rem 15rem 77rem;
-    font-size: 1.5rem;
+    width: 41rem;
+    margin: 15rem 0rem 15rem 70rem;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    text-align: center;
 }
 
 .video-project {
@@ -265,15 +267,19 @@ color: var(--primary-color);
 }
 
 .text2 p {
-    width: 38rem;
+    width: 42rem;
     margin: 19rem 0rem 9rem 14rem;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    text-align: center;
 }
 
 .text3 p {
     width: 38rem;
     margin: 7rem 0rem 18rem 71rem;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    text-align: center;
 }
 
 .img-four {
@@ -310,7 +316,7 @@ color: var(--primary-color);
 }
 
 .quote-text {
-   width: 59rem;
+   width: 65rem;
     font-size: 4.2rem;
     letter-spacing: -1px;
     line-height: 1;
@@ -534,3 +540,66 @@ color: var(--primary-color);
   font-weight: 400;
   opacity: 0.9;
 }
+
+
+
+
+
+
+
+
+
+
+/* ---------------------- PAGINA PROJECT ---------------------- */
+
+.text_top1 {
+    display: flex;
+    flex-direction: column;
+    gap: 12rem;
+}
+
+.text_top {
+    display: flex;
+    flex-direction: row;
+    margin: -12rem 0rem 0rem 4rem;
+}
+
+.text_top p {
+    font-size: 7rem;
+    font-weight: 400;
+    width: 48rem;
+    line-height: 1;
+    letter-spacing: -2px;
+} 
+
+.text_bottom1 p {
+  font-size: 5rem;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -2px;
+} 
+
+.text_bottom1 {
+    width: 60rem;
+    margin-left: 56rem;
+}
+
+.icon-work1{
+    width: 5rem;
+    height: fit-content;
+    rotate: 90deg;
+    margin-left: -27rem;
+    margin-top: 8rem;
+} 
+
+.icon-work2 {
+    width: 5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.hr_header {
+     width: 95%;
+     border-top: 3px solid var(--primary-color);
+    margin-left: 3rem;
+} 
