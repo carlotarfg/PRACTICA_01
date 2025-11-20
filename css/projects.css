@@ -198,18 +198,18 @@ color: var(--primary-color);
 
 .header_arrow img {
     width: 10rem;
-    margin-bottom: -6rem;
+    margin-bottom: -5rem;
     rotate: -180deg;
 }
-.text_header {
+.text_header2 {
     display: flex;
     flex-direction: column;
-    margin-top: 4rem;
     margin-left: 3.5rem;
+    margin-top: 4rem;
 }
 
-.text_header p {
-    font-size: 18rem;
+.text_header2 p {
+    font-size: 15rem;
     letter-spacing: -2px;
     font-weight: 500;
 }
@@ -239,37 +239,93 @@ color: var(--primary-color);
 }
 
 .container-fluid {
-    width: 95%;
+    width: 96.5%;
+    overflow-x: hidden; 
+    box-sizing: border-box;
+    position: relative; 
+    margin-left: 2rem;
 }
 
 .text1 p {
-    width: 41rem;
-    margin: 15rem 0rem 15rem 70rem;
+    width: min(44rem, 49vw);
+    margin: 21rem 0 20rem 0rem;
     font-size: 1.8rem;
+    transform: translateX(38rem);
     line-height: 1.2;
     text-align: center;
+    max-width: 100%; 
+    box-sizing: border-box;
+    word-wrap: break-word;
 }
 
 .video-project {
-    margin: 0rem 0rem 0rem 4rem;
-    width: 94%;
+    margin: 0 0 0 min(4rem, 3vw); 
+    width: min(94%, 100vw);
+    max-width: 100%; 
+    box-sizing: border-box;
+    display: block; 
+}
+
+.text1 {
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.text1 p,
+.video-project {
+    position: relative; 
+    z-index: 1; 
+}
+
+
+
+.text2,
+.text3 {
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Este overflow debe estar aquí */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .text2 p {
-    width: 42rem;
-    margin: 19rem 0rem 9rem 14rem;
+    width: min(43rem, 80vw);
+    margin: 19rem 0 9rem 0;
     font-size: 1.8rem;
     line-height: 1.2;
     text-align: center;
+    max-width: 100%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    padding: 0 1rem;
+
+    /* Cambiamos transform por posición absoluta */
+    position: relative;
+    left: -27rem;
 }
 
 .text3 p {
-    width: 38rem;
-    margin: 7rem 0rem 18rem 71rem;
+    width: min(43rem, 80vw);
+margin: 6rem 0 19rem 0;
     font-size: 1.8rem;
     line-height: 1.2;
     text-align: center;
+    max-width: 100%;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    padding: 0 1rem;
+
+    /* Cambiamos transform por posición absoluta */
+    position: relative;
+    left: 28rem;
+
 }
+
 
 .img-four {
     height: 600px;
@@ -328,6 +384,8 @@ color: var(--primary-color);
 
 
 
+
+
 /* ---------------------- PAGINA PROJECT ---------------------- */
 
 .text_header {
@@ -339,7 +397,7 @@ color: var(--primary-color);
 .text_headertop {
     display: flex;
     flex-direction: row;
-    margin: -12rem 0rem 0rem 1rem;
+    margin: -12rem 0rem 0rem 6rem;
 }
 
 .text_headertop p {
@@ -387,120 +445,120 @@ color: var(--primary-color);
 /* ---------  */
 
 
-        .project-card {
-            border: none;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            height: 84%;
-        }
+  .project-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 84%;
+  }
 
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-        }
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  }
 
-        .position-relative {
-            position: relative;
-        }
+  .position-relative {
+    position: relative;
+  }
 
-        .circle-link {
-           position: absolute;
-          top: 10px;
-          right: 10px;
-          background-color: #4a6cf7;
-          color: white;
-          width: 4rem;
-          height: 4rem;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          text-decoration: none;
-          z-index: 10;
-          transition: background-color 0.3s ease;
-        }
+  .circle-link {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #4a6cf7;
+    color: white;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+  }
 
-        .circle-link:hover {
-            background-color: #3a5bd9;
-        }
+  .circle-link:hover {
+    background-color: #3a5bd9;
+  }
 
-        .arrow-icon {
-            width: 3rem;
-            height: fit-content;
-            filter: invert(1);
-        }
+  .arrow-icon {
+    width: 3rem;
+    height: fit-content;
+    filter: invert(1);
+  }
 
-        .project-title1,  .project-title2,  .project-title3,  .project-title4,  .project-title5 {
-            font-size: 3rem;
-            font-weight: 400;
-            letter-spacing: -2px;
-            color: #333;
-            margin: 0;
-            display: inline-block;
-            vertical-align: middle;
-        }
+  .project-title1,  .project-title2,  .project-title3,  .project-title4,  .project-title5 {
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: -2px;
+    color: #333;
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+  }
 
-        .tag {
-            background-color: #4a6cf7;
-            color: white;
-            padding: 0.5rem;
-            border-radius: 4px;
-            font-size: 1.5rem;
-            font-weight: 500;
-            margin-left: 1rem;
-            display: inline-block;
-            border: 1px black solid;
-            vertical-align: middle;
-        }
+  .tag {
+    background-color: #4a6cf7;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: 1rem;
+    display: inline-block;
+    border: 1px black solid;
+    vertical-align: middle;
+  }
 
-        .project-info1 {
-          margin-top: 2rem;
-          display: flex;
-          gap: 26rem;
-          justify-content: space-between;
-        }
-
-
-        .project-info2 {
-          margin-top: 2rem;
-          display: flex;
-          gap: 6rem;
-          justify-content: space-between;
-        }
-        
-        .project-info3 {
-          margin-top: 2rem;
-          display: flex;
-          gap: 6rem;
-          justify-content: space-between;
-        }
+  .project-info1 {
+    margin-top: 2rem;
+    display: flex;
+    gap: 26rem;
+    justify-content: space-between;
+  }
 
 
-        .project-info4 {
-          margin-top: 2rem;
-          display: flex;
-          gap: 6rem;
-          justify-content: space-between;
-        }
-
-        .project-info5 {
-          margin-top: 2rem;
-          display: flex;
-          gap: 6rem;
-          justify-content: space-between;
-        }
-
-        .col-12 {
-          flex: 0 0 auto;
-          width: 100%;
-          margin-bottom: 3rem;
-          height: 90%;
-      }
+  .project-info2 {
+    margin-top: 2rem;
+    display: flex;
+    gap: 6rem;
+    justify-content: space-between;
+  }
+  
+  .project-info3 {
+    margin-top: 2rem;
+    display: flex;
+    gap: 6rem;
+    justify-content: space-between;
+  }
 
 
-      /* FOOTER  */
+  .project-info4 {
+    margin-top: 2rem;
+    display: flex;
+    gap: 6rem;
+    justify-content: space-between;
+  }
+
+  .project-info5 {
+    margin-top: 2rem;
+    display: flex;
+    gap: 6rem;
+    justify-content: space-between;
+  }
+
+  .col-12 {
+    flex: 0 0 auto;
+    width: 100%;
+    margin-bottom: 3rem;
+    height: 90%;
+}
+
+
+/* FOOTER  */
 
 /* MARQUEE  */
 
