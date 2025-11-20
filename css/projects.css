@@ -805,6 +805,18 @@ margin: 6rem 0 19rem 0;
             .text_bottom1 {
                 margin-left: 36%;
             }
+
+          .text1 p {
+            transform: translateX(29rem);
+          }
+
+          .text2 p {
+            left: -21rem;
+          }
+
+          .text3 p {
+            left: 20rem;
+          }
         }
 
          @media (max-width: 1499px) {
@@ -818,9 +830,37 @@ margin: 6rem 0 19rem 0;
             }
         }
          @media (max-width: 1299px) {
-            .text_bottom1 {
-                margin-left: 20%;
-            }
+          .text_bottom1 {
+              margin-left: 20%;
+          }
+
+          .text1 p {
+            transform: translateX(19rem);
+            width: min(44rem, 59vw);
+          }
+
+          .text2 p {
+            left: -13rem;
+          }
+
+          .text3 p {
+            left: 12rem;
+          }
+
+          .quote-mark {
+              margin-left: 2rem;
+          }
+
+          .quote-text {
+            width: 65rem;
+            font-size: 3.5rem;
+          }
+
+          .quote-attribution {
+            font-size: 1.5rem;
+            margin-top: -1rem;
+            margin-left: 14rem;
+          } 
         }
 
          @media (max-width: 1199px) {
@@ -851,6 +891,24 @@ margin: 6rem 0 19rem 0;
               width: 4.5rem;
               margin-left: -31rem;
               margin-top: 7rem;
+            }
+
+            .text1 p {
+              transform: translateX(12rem);
+              width: min(50rem, 64vw);
+            }
+
+            .text2 p {
+              left: -8rem;
+            }
+
+            .text3 p {
+              left: 7rem;
+            }
+
+            .quote-text {
+              width: 65rem;
+              font-size: 3rem;
             }
         }
 
@@ -888,6 +946,24 @@ margin: 6rem 0 19rem 0;
               font-size: 4rem;
               width: 84%;
             } 
+
+            .text1 p {
+              transform: translateX(7rem);
+              width: min(62rem, 79vw);
+            }
+
+            .text2 p {
+              left: 0rem;
+            }
+
+            .text3 p {
+              left: 0rem;
+            }
+
+            .quote-text {
+              width: 65rem;
+              font-size: 3rem;
+            }
         }
 
          @media (max-width: 820px) {
@@ -910,6 +986,599 @@ margin: 6rem 0 19rem 0;
             .project-info1 {
               gap: 14rem;
             }
+
+            .text_headertop {
+              display: flex;
+              flex-direction: row;
+              margin: -12rem 0rem 0rem 4rem;
+            }
+
+            .text_headertop p {
+              font-size: 6rem;
+              font-weight: 400;
+              width: 48rem;
+              line-height: 1;
+              letter-spacing: -8px;
+            }
+            .container-fluid {
+                margin-left: 1rem;
+            }
+
+            .marquefooter-r h1, .marquefooter-l h1 {
+              color: #1d1d1b2b;
+              font-size: 5rem;
+              font-weight: 300;
+              white-space: nowrap;
+              letter-spacing: -7px;
+              padding: 0 2%;
+          }
+
+          #foot .top {
+              display: flex;
+              align-items: flex-start;
+              margin-top: -3rem;
+              gap: 18rem;
+          }
+
+          .text_top1 p, .text_top2 p, .text_top3 p {
+              margin: 0;
+              font-size: 4rem;
+              line-height: 0.85;
+              letter-spacing: -3px;
+          }
+
+          #foot .img_footer {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 98%;
+              margin-left: 1rem;
+              height: 100%;
+              z-index: 0;
+          }
+
+          #foot .top {
+              display: flex;
+              align-items: flex-start;
+              margin-top: -3rem;
+              gap: 18rem;
+          }
+
+          #foot {
+              position: relative;
+              width: 100%;
+              height: 43vh;
+              padding: 3rem;
+              overflow: hidden;
+              color: white;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              box-sizing: border-box;
+              margin-top: -4rem;
+          }
+
+          .text_top3 p span img {
+              width: 5rem;
+          }
+
+          .text_middle .icon_top p {
+              font-size: 4rem;
+              font-weight: 500;
+              letter-spacing: -2px;
+          }
+
+          .text_middle .icon_top img {
+              width: 3rem;
+              margin-top: -1rem;
+              height: auto;
+          }
+
+          .text_bottom {
+              display: flex;
+              justify-content: space-between;
+              align-items: flex-end;
+              flex-wrap: wrap;
+              width: 93.5%;
+              margin: 0rem 0rem 2rem 2rem;
+              font-size: 1rem;
+          }
+
+          .text_middle {
+              text-align: left;
+              margin-top: 0rem;
+          }
+
+          .text_bottom {
+              display: flex;
+              justify-content: space-between;
+              align-items: flex-end;
+              flex-wrap: wrap;
+              width: 93.5%;
+              margin: 0rem 0rem 2rem 2rem;
+              font-size: 1rem;
+          }
+
+          /* -------------  */
+
+          .header_arrow img {
+              width: 8rem;
+              margin-bottom: -4rem;
+              rotate: -180deg;
+          }
+
+          .text_header2 p {
+              font-size: 11rem;
+              letter-spacing: -2px;
+              font-weight: 500;
+          }
+
+          .text_header2 {
+              display: flex;
+              flex-direction: column;
+              margin-left: 3.5rem;
+              margin-top: 13rem;
+          }
+
+          .logo {
+              margin: 2rem 0rem 14rem 2rem;
+              width: 20%;
+              filter: invert(1);
+          }
+
+          .navbar-a {
+              top: -21rem;
+          }
+
+          .text1 p {
+              font-size: 1.5rem;
+              transform: translateX(6rem);
+          }
+
+          .text2 p, .text3 P {
+            font-size: 1.5rem;
+          }
+
+          .quote-attribution {
+              font-size: 1.2rem;
+              margin-top: 2rem;
+              margin-left: 9rem;
+          }
+
+          .quote-mark {
+              margin-left: 0rem;
+              font-size: 16rem;
+          }
+
+    }
+
+    @media (max-width: 699px) {
+
+        .text1 p {
+            font-size: 1.5rem;
+            transform: translateX(4rem);
+            width: min(62rem, 84vw);
         }
 
-  
+        .text2 p {
+          width: min(43rem, 83vw); 
+        }
+
+        .quote-attribution {
+            font-size: 1.2rem;
+            margin-top: 4rem;
+            margin-left: 7rem;
+        }
+
+        .quote-text {
+            width: 65rem;
+            font-size: 2.5rem;
+        }
+
+        .quote-mark {
+            margin-left: 0rem;
+            font-size: 12rem;
+        }
+    }
+
+    @media (max-width: 499px) {
+        .navbar-a {
+            top: -20rem;
+        }
+
+        .text_header2 p {
+          font-size: 8rem;
+          letter-spacing: -2px;
+          font-weight: 500;
+        }
+        .header_arrow img {
+          width: 6rem;
+          margin-bottom: -4rem;
+          rotate: -180deg;
+        }
+
+        .text_header2 {
+          display: flex;
+          flex-direction: column;
+          margin-left: 3.5rem;
+          margin-top: 17rem;
+        }
+
+        .text1 p {
+          font-size: 1.3rem;
+          transform: translateX(7rem);
+          width: min(62rem, 57vw);
+        }
+
+        .text2 p {
+            width: min(43rem, 59vw);
+        }
+
+        .text2 p, .text3 P {
+            font-size: 1.3rem;
+        }
+
+        .text3 p {
+          width: min(43rem, 56vw);
+        }
+
+            .quote-text {
+        font-size: 2em;
+        }
+
+        .quote-container {
+          background-color: #000;
+          padding: 3rem;
+          border-radius: 0.5rem;
+          width: 95%;
+          height: 22rem;
+          margin: 5rem auto;
+        }
+
+        .quote-attribution {
+          font-size: 1rem;
+          margin-top: 3rem;
+          margin-left: 7rem;
+        }
+
+        .quote-mark {
+          margin-left: 0rem;
+          font-size: 12rem;
+        }
+    }
+
+    @media (max-width: 375px) {
+
+    .close-btn {
+        top: 0.4rem;
+        right: 0.5rem;
+        font-size: 2em;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .cookie-banner h3 {
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: var(--primary-color);
+        margin: 0;
+    }
+
+    .cookie-banner p {
+        font-size: 0.7rem;
+        color: #444;
+        margin: 0;
+        line-height: 1.5;
+    }
+
+    .btn {
+        padding: 0.85rem 1.5rem;
+        border-radius: 0.5rem;
+        font-size: 0.7rem;
+    }
+
+    .cookie-banner {
+        bottom: 2.5rem;
+        left: 1.5rem;
+        max-width: 50rem;
+        width: calc(86% - 3rem);
+        padding: 1rem;
+        border-radius: 1rem;
+        gap: 1.25rem;
+        font-size: 1rem;
+    }
+
+    .menu-toggle-a {
+        width: 5.5rem;
+        padding: 0.5rem;
+        margin-left: 1.5rem;
+        margin-bottom: 0.2rem;
+        font-size: 0.9em;
+    }
+
+    .navbar-a{
+        width: 9rem;
+        height: 8rem;
+        padding: 1.2rem;
+        left: clamp(1rem, 100vw - 10rem, 45rem);
+        top: -18.5rem;
+    }
+
+    .menu-mobile-a {
+        line-height: 0.2;
+        font-size: 1rem;
+    }
+
+    .header_up {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 1rem 0rem;
+      height: auto;
+    }
+    .logo {
+      margin: 2rem 0rem 14rem 2rem;
+      width: 18%;
+      filter: invert(1);
+    }
+
+    .text_headertop {
+      display: flex;
+      flex-direction: row;
+      margin: -12rem 0rem 0rem 2.5rem;
+    }
+
+    .text_headertop p {
+      font-size: 2rem;
+      font-weight: 400;
+      width: 15rem;
+      line-height: 1;
+      letter-spacing: -2px;
+      margin: -5rem 0rem 0rem -1rem;
+    }
+
+    .icon-work2 {
+      width: 2rem;
+      margin: -0.5rem 0.5rem 0rem 0.5rem;
+    }
+
+    .hr_header {
+      width: 85%;
+      border-top: 2px solid var(--primary-color);
+      margin-left: 1.5rem;
+    }
+
+    .text_bottom1 p {
+      font-size: 2rem;
+    }
+
+    .text_header {
+      display: flex;
+      flex-direction: column;
+      gap: 6rem;
+    }
+
+    .text_bottom1 p {
+      font-size: 2rem;
+    }
+
+    .col-12 {
+      flex: 0 0 auto;
+      width: 100%;
+      margin-bottom: 0rem;
+      height: 90%;
+    }
+
+    .project-info1 {
+      gap: 2rem;
+    }
+
+    .arrow-icon {
+      width: 1.5rem;
+      height: fit-content;
+      filter: invert(1);
+    }
+
+    .circle-link {
+        width: 2rem;
+        height: 2rem;
+    
+    }
+
+    .container-fluid {
+        margin-left: 0.5rem;
+    }
+
+    .project-title1, .project-title2, .project-title3, .project-title4, .project-title5 {
+      font-size: 1.5rem;
+      letter-spacing: -2px;
+    }
+
+    .tag {
+      font-size: 0.7rem;
+      margin-left: 0rem;
+    }
+
+    .project-card {
+      height: 75%;
+    }
+
+    .project-info2 {
+      gap: 4rem;
+    }
+
+    .project-info5 {
+      gap: 3rem;
+    }
+
+    .marquefooter-r h1, .marquefooter-l h1 {
+      color: #1d1d1b2b;
+      font-size: 2rem;
+      font-weight: 300;
+      margin-top: 1rem;
+      white-space: nowrap;
+      letter-spacing: -3px;
+      padding: 0 2%;
+    }
+
+    #foot {
+      position: relative;
+      width: 100%;
+      height: 38vh;
+      padding: 2rem;
+      overflow: hidden;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-sizing: border-box;
+      margin-top: -1.5rem;
+    }
+
+    .text_top1 p, .text_top2 p, .text_top3 p {
+      margin: 0;
+      font-size: 2rem;
+      line-height: 0.85;
+      letter-spacing: -2px;
+    }
+
+    .text_top3 p span img {
+      width: 2.5rem;
+    }
+
+    .text_middle .icon_top p {
+      font-size: 2rem;
+      font-weight: 500;
+      letter-spacing: -1px;
+    }
+
+    .text_middle .icon_top img {
+      width: 1.5rem;
+      margin-top: -1.2rem;
+      height: auto;
+    }
+
+    .text_middle .icon_top {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .text_bottom ul {
+      list-style: none;
+      color: var(--third-color);
+      display: flex;
+      gap: 0.5rem;
+      margin: 0;
+      padding: 0;
+  }
+
+    .text_bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: nowrap;
+      width: 90.5%;
+      margin: 0rem 0rem 2rem 1rem;
+      font-size: 0.5rem;
+    }
+
+    .work_arrow img {
+      width: 1.5rem;
+      margin-right: 0rem;
+    }
+
+    #foot .top {
+      display: flex;
+      align-items: flex-start;
+      margin-top: -3rem;
+      gap: 5rem;
+    }
+
+    #foot .img_footer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 93%;
+      margin-left: 1rem;
+      height: 100%;
+      z-index: 0;
+    }
+
+    .marquefooter-r {
+      margin-top: 3rem;
+      margin-bottom: -2rem;
+    }
+
+    /* ---------- */
+
+        .header_arrow img {
+        width: 5rem;
+        margin-bottom: -3rem;
+        rotate: -180deg;
+    }
+
+        .text_header2 p {
+        font-size: 6rem;
+        letter-spacing: -2px;
+        font-weight: 500;
+    }
+
+    .text_header2 {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    .container-fluid {
+        margin-left: 1rem;
+    }
+
+    .text1 p {
+        font-size: 1.1rem;
+        transform: translateX(4rem);
+        width: min(62rem, 64vw);
+        margin: 12rem 0 10rem 0rem;
+    }
+
+    .text2 p, .text3 P {
+        font-size: 1.1rem;
+    }
+
+        .text2 p {
+        width: min(43rem, 67vw);
+        margin: 8rem 0 2rem 0;
+    }
+
+        .text3 p {
+        width: min(43rem, 65vw);
+        margin: 6rem 0 10rem 0;
+    }
+
+        .quote-container {
+        background-color: #000;
+        padding: 2rem;
+        border-radius: 0.5rem;
+        width: 95%;
+        height: 15rem;
+        margin: 2rem auto;
+    }
+
+    .quote-text {
+        font-size: 1.5em;
+    }
+
+        .quote-mark {
+        margin-left: 0rem;
+        font-size: 7rem;
+        margin-top: -1rem;
+    }
+
+    .quote-attribution {
+        font-size: 0.7rem;
+        margin-top: 2rem;
+        margin-left: 4.5rem;
+    }
+
+    }
