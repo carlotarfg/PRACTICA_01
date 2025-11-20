@@ -122,24 +122,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const imagesByCategory = {
     "UX / UI": {
-      img1: "media/img/ux_2.png",
-      img2: "media/img/ux_3.png",
-      img3: "media/img/ux_1.png"
+      img1: "media/img/RADIANT 2.webp",
+      img2: "media/img/tasty.webp",
+      img3: "media/img/DIZZER.webp"
     },
     "3D": {
-      img1: "media/img/Rectangle 5.png",
-      img2: "media/img/Rectangle 5.png",
-      img3: "media/img/Rectangle 5.png"
+      img1: "media/img/PROSE4.webp",
+      img2: "media/img/PLASTIC FLOWER6.webp",
+      img3: "media/img/skin.webp"
     },
     "EDITORIAL": {
-      img1: "media/img/Rectangle 4.png",
-      img2: "media/img/Rectangle 4.png",
-      img3: "media/img/Rectangle 4.png"
+      img1: "media/img/Uffizi5.webp",
+      img2: "media/img/Uffizi9.webp",
+      img3: "media/img/clap.webp"
     },
     "BRANDING": {
-      img1: "media/img/Rectangle 6.png",
-      img2: "media/img/Rectangle 6.png",
-      img3: "media/img/Rectangle 6.png"
+      img1: "media/img/bigbun3.webp",
+      img2: "media/img/pufy14.webp",
+      img3: "media/img/5.webp"
     }
   };
 
