@@ -269,3 +269,45 @@ document.addEventListener('DOMContentLoaded', () => {
     
   });
 });
+
+// -------------- ICONO 
+
+document.addEventListener("DOMContentLoaded", function () {
+    const icon = document.querySelector(".icon-header");
+
+    const icon1 = "media/svgs/Recurso 21.svg";     
+    const icon2 = "media/svgs/Recurso 31.svg";    
+
+    const cambiarIconoYBorde = () => {
+        icon.src = icon2;
+        icon.classList.add("icon-header--con-borde");
+    };
+
+    const volverIconoOriginal = () => {
+        icon.src = icon1;
+        icon.classList.remove("icon-header--con-borde");
+    };
+
+    icon.addEventListener("mouseenter", cambiarIconoYBorde);
+
+    icon.addEventListener("mouseleave", volverIconoOriginal);
+
+    icon.addEventListener("click", () => {
+        cambiarIconoYBorde();
+        setTimeout(volverIconoOriginal, 1000); 
+    });
+
+    let isScrolling = false;
+
+    window.addEventListener("scroll", () => {
+        if (!isScrolling) {
+            cambiarIconoYBorde();
+            isScrolling = true;
+
+            setTimeout(() => {
+                volverIconoOriginal();
+                isScrolling = false;
+            }, 150);
+        }
+    });
+});

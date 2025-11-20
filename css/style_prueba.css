@@ -16,6 +16,10 @@
   font-style: normal;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 /* GENERAL */
 
 * {
@@ -189,9 +193,33 @@ header {
 .icon-header {
     width: 8rem;
     margin-top: -1rem;
+
+transition: transform 0.6s cubic-bezier(0.22, 0.61, 0.36, 1),
+                border 0.3s ease,
+                opacity 0.3s ease;}
+
+
+.icon-header--con-borde {
+    border: 2px solid var(--third-color); 
+    border-radius: 30px; 
+    padding: 2px; 
 }
+
 .icon-header2 {
-    width: 4rem;
+    width: 5rem;
+}
+
+.girar-despacito {
+    animation: girar 10s linear infinite; 
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 /* ----- MENU RESPONSIVE  */
 
@@ -309,7 +337,7 @@ header {
   display: flex;
   line-height: 0.8;
   margin: -3rem 0rem 0rem 2rem;
-  gap: clamp(2rem, 17vw, 20rem);
+  gap: clamp(2rem, 26vw, 28rem);
   flex-direction: row;
   align-items: flex-end;
   overflow-x: hidden;
@@ -1061,8 +1089,7 @@ header {
 }
 
 .text_top3 p span img {
-  width: 7rem;
-  filter: invert(1);
+  width: 10rem;
 }
 
 .text_top1 p,
