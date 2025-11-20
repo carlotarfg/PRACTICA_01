@@ -16,6 +16,10 @@
   font-style: normal;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 
 
 
@@ -429,9 +433,8 @@ margin: 6rem 0 19rem 0;
 } 
 
 .icon-work2 {
-    width: 5rem;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    width: 6rem;
+    margin: -1rem 1.5rem 0rem 1.5rem;
 }
 
 .hr_header {
@@ -673,8 +676,7 @@ margin: 6rem 0 19rem 0;
 }
 
 .text_top3 p span img {
-  width: 7rem;
-  filter: invert(1);
+    width: 10rem;
 }
 
 .text_top1 p,
