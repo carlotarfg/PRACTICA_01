@@ -52,7 +52,6 @@ img{
 /* ------------------------------------ *//* HEADER HOME  */
 
 header {
-  background-color: var(--primary-color);
   color: var(--second-color);
   margin: 0px;
   padding: 0px;
@@ -281,7 +280,8 @@ header {
   align-items: center;
   gap: 20px;
   z-index: 10;     
-  margin-left: 60rem;  
+  right: 2rem;
+  margin-right: 4rem;
 }
 
 .about h1 {
@@ -298,34 +298,23 @@ header {
 
 /* -------------------------------- */
 
-.descripcion {
-  display: flex;
-}
-
-.descripcion img {
-  width: 80%;
-}
-
-.descripcion p {
-  font-size: 3rem;
-}
-
-.descripcion {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 4rem;
-  padding: 4rem;
-}
-
-.descripcion .imagen img {
-  border-radius: 1rem;
-}
-
 
 .imagen img {
-width: 80%;
+  width: 95%;  
+  max-width: 600px;
+}
 
+
+.word-with-icon {
+  display: inline-flex;
+  align-items: center;
+}
+
+
+.icon {
+  width: 2.8rem;
+  margin-left: 0.6rem;
+  transform: translateY(3px);
 }
 
 .main-text {
@@ -338,13 +327,8 @@ width: 80%;
   color: var(--third-color);
 }
 
-.icon {
-  width: 2.5rem;
-  height: 2.5rem;
-  vertical-align: middle;
-  margin-left: 0.5rem;
-}
 
+/* Responsive */
 @media (max-width: 992px) {
   .descripcion {
     flex-direction: column;
@@ -353,10 +337,18 @@ width: 80%;
   }
 
   .main-text {
-    font-size: 2rem;
+    font-size: 2.2rem;
     text-align: center;
   }
+
+  .imagen img {
+    width: 80%;
+  }
 }
+
+
+
+
 
 /* THE TEAM  */
 
@@ -376,6 +368,7 @@ font-size: 2.3rem;
   justify-content: center;
   gap: 2.5rem;
   position: relative;
+  margin: 2rem 0rem 8rem 0rem;
 }
 
 #the_team .team img {
@@ -534,7 +527,14 @@ font-size: 2.3rem;
 /* HOW WE WORK */
 
 #how_we_work {
-  margin-left: 65rem;
+  top: 52%;          
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;
+  gap: 20px;
+  z-index: 10;     
+  right: 2rem;
+  margin-right: 5rem;
 }
 
 #how_we_work h1 {
@@ -587,7 +587,7 @@ color: #bfbfbf;
   align-items: center;  
 }
 
-.icon {
+.star {
   font-weight: 500;
   font-size: 3rem;
   line-height: 1;
