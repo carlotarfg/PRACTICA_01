@@ -40,7 +40,7 @@ html, body {
 
 body, p, h1, h2, h3, h4, h5, h6, li, a, span, label, input, textarea, button {
       color: var(--second-color);
-      letter-spacing: -2px;
+      letter-spacing: -1px;
 }
 
 img{
@@ -361,14 +361,15 @@ margin-bottom: 3rem;
 .purple {
 color: var(--third-color);
 font-size: 2.3rem;
+margin-left: 4rem;
 }
 
 #the_team .team {
   display: flex;
   justify-content: center;
-  gap: 2.5rem;
+  gap: 5rem;
   position: relative;
-  margin: 2rem 0rem 8rem 0rem;
+  margin: 2rem 0rem 5rem 0rem;
 }
 
 #the_team .team img {
@@ -398,6 +399,7 @@ font-size: 2.3rem;
 
 .text1 {
   margin-right: 12rem;
+  margin-bottom: 5rem;
   flex-direction: column;
   align-items: flex-end;
   line-height: 0.6;
@@ -410,6 +412,7 @@ font-size: 2.3rem;
 .text1 > p,
 .text > p {
   font-size: 2.3rem;
+  margin-left: 4rem;
 }
 
 
@@ -421,108 +424,6 @@ font-size: 2.3rem;
 
 /* WORK WITH US  */
 
-
-
-#work_with_us {
-  background-color: var(--second-color);
-  margin-top: 60rem;
-  color: var(--primary-color);
-}
-
-.title_work {
-  display: flex;
-  flex-direction: row;
-  font-weight: 500;
-  letter-spacing: -5px;
-  gap: 2rem;
-  font-size: 8rem;
-  margin: 10rem 0rem 6rem 13rem;
-  justify-content: flex-end;
-}
-
-.title_work p {
-  color: var(--primary-color);
-}
-
-
-.work_arrow img {
-  width: 8rem;
-  margin-right: 2rem;
-  margin-top: -0.8rem;
-}
-
-.form {
-  display: flex;
-  letter-spacing: -5px;
-  gap: 1rem;
-  line-height: 0.8;
-  flex-direction: column;
-  margin-left: 1rem;
-}
-
-.name, .email, .project {
-  display: flex;
-  gap: 2rem;
-  flex-direction: row;
-  align-items: flex-end;
-}
-
-.name p, .email p, .project p, .hello p {
-  color: var(--primary-color);
-  font-size: 8rem;
-  margin-bottom: 0rem;
-}
-
-.hello p {
-  margin-left: 39rem;
-}
-
-.name input, .email input, .project input {
-  background-color: transparent;
-  height: 7rem;
-  text-align: center;
-  font-size: 2rem;
-  border: 0px;
-  border-bottom: 1px var(--primary-color);
-}
-
-.name input {
-  width: 74rem;
-}
-
-.email input {
-  width: 55rem;
-}
-
-.project input {
-  width: 56rem;
-}
-
-.form_button {
-  font-size: 3rem;
-  margin: 4rem 0rem 3rem 108rem;
-  color: var(--second-color);
-  padding: 1rem;
-  width: 9rem;
-  letter-spacing: -2px;
-  border-radius: 0.5rem;
-  background-color: var(--primary-color);
-  text-decoration: none;
-
-}
-
-.form input {
-  color: #bfbfbf !important;
-}
-
-.form input::placeholder {
-  color: #bfbfbf !important; 
-}
-
-.form input:focus {
-  outline: none;
-  box-shadow: none;
-}
 
 /* HOW WE WORK */
 
@@ -565,17 +466,29 @@ color: #bfbfbf;
   margin: 3rem;
 }
 
-
-.timeline::before {
-  content: "";
+.line {
   position: absolute;
   top: 50%;
   left: 0;
-  width: 100%;
+  height: 0.15rem;
+  width: 0%; /* empieza desde 0 y se expande */
+  background: var(--second-color);
+  transform: translateY(-50%);
+  z-index: 1;
+  transition: width 0.5s linear;
+}
+
+.timeline::before {
+content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 0; /* empieza desde 0 y se va expandiendo con scroll */
   height: 0.15rem;
   background: var(--second-color);
   transform: translateY(-50%);
   z-index: 1;
+  transition: width 0.5s linear;
 }
 
 .step {
@@ -585,6 +498,14 @@ color: #bfbfbf;
   display: flex;
   flex-direction: column;
   align-items: center;  
+   opacity: 0; /* invisible hasta que se active con scroll */
+  transform: translateY(20px); /* posición inicial para subir */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.step.show {
+ opacity: 1; /* aparece cuando entra en pantalla */
+  transform: translateY(0); /* vuelve a su posición */
 }
 
 .star {
@@ -616,9 +537,19 @@ color: #bfbfbf;
 
 
 
+.text3 p {
+  font-size: 2.5rem;
+  flex-direction: column;
+  align-items: flex-end;
+  line-height: 0.6;
+}
 
-
-
+.text4 p {
+  font-size: 2.5rem;
+  flex-direction: column;
+  align-items: flex-end;
+  line-height: 0.6;
+}
 
 
 
@@ -827,4 +758,6 @@ color: #bfbfbf;
 }
 
 
+
+/* ------------ MEDIA QUERYS ------------ */
 
