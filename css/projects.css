@@ -1101,6 +1101,12 @@ margin: 6rem 0 19rem 0;
                 margin-left: 1rem;
             }
 
+            .form_button {
+              width: 8rem;
+              font-size: 2.5rem;
+              margin: 3rem 0 4rem clamp(0rem, 81vw, 115rem);
+            }
+
             .marquefooter-r h1, .marquefooter-l h1 {
               color: #1d1d1b2b;
               font-size: 5rem;
@@ -1460,107 +1466,107 @@ margin: 6rem 0 19rem 0;
     }
 
     @media (max-width: 499px) {
-        .navbar-a {
-            top: -20rem;
-        }
+      .navbar-a {
+      top: -20rem;
+      }
 
-        .text_header2 p {
-          font-size: 8rem;
-          letter-spacing: -2px;
-          font-weight: 500;
-        }
-        .header_arrow img {
-          width: 6rem;
-          margin-bottom: -4rem;
-          rotate: -180deg;
-        }
+      .text_header2 p {
+      font-size: 8rem;
+      letter-spacing: -2px;
+      font-weight: 500;
+      }
+      .header_arrow img {
+      width: 6rem;
+      margin-bottom: -4rem;
+      rotate: -180deg;
+      }
 
-        .text_header2 {
-          display: flex;
-          flex-direction: column;
-          margin-left: 3.5rem;
-          margin-top: 17rem;
-        }
+      .text_header2 {
+      display: flex;
+      flex-direction: column;
+      margin-left: 3.5rem;
+      margin-top: 17rem;
+      }
 
-        .text1 p {
-          font-size: 1.3rem;
-          transform: translateX(7rem);
-          width: min(62rem, 57vw);
-        }
+      .text1 p {
+      font-size: 1.3rem;
+      transform: translateX(7rem);
+      width: min(62rem, 57vw);
+      }
 
-        .text2 p {
-            width: min(43rem, 59vw);
-        }
+      .text2 p {
+      width: min(43rem, 59vw);
+      }
 
-        .text2 p, .text3 P {
-            font-size: 1.3rem;
-        }
+      .text2 p, .text3 P {
+      font-size: 1.3rem;
+      }
 
-        .text3 p {
-          width: min(43rem, 56vw);
-        }
+      .text3 p {
+      width: min(43rem, 56vw);
+      }
 
-            .quote-text {
-        font-size: 2em;
-        }
+      .quote-text {
+      font-size: 2em;
+      }
 
-        .quote-container {
-          background-color: #000;
-          padding: 3rem;
-          border-radius: 0.5rem;
-          width: 95%;
-          height: 22rem;
-          margin: 5rem auto;
-        }
+      .quote-container {
+      background-color: #000;
+      padding: 3rem;
+      border-radius: 0.5rem;
+      width: 95%;
+      height: 22rem;
+      margin: 5rem auto;
+      }
 
-        .quote-attribution {
-          font-size: 1rem;
-          margin-top: 3rem;
-          margin-left: 7rem;
-        }
+      .quote-attribution {
+      font-size: 1rem;
+      margin-top: 3rem;
+      margin-left: 7rem;
+      }
 
-        .quote-mark {
-          margin-left: 0rem;
-          font-size: 12rem;
-        }
+      .quote-mark {
+      margin-left: 0rem;
+      font-size: 12rem;
+      }
 
-        #foot .top {
-    gap: 5rem;
-    }
+      #foot .top {
+      gap: 5rem;
+      }
 
-    .text_bottom ul {
-        gap: 0.5rem;
-    }
+      .text_bottom ul {
+      gap: 0.5rem;
+      }
 
-    .text_bottom {
-    font-size: 0.8rem;
-    width: 90.5%;
-    }
+      .text_bottom {
+      font-size: 0.8rem;
+      width: 90.5%;
+      }
 
-    .text_top1 p, .text_top2 p, .text_top3 p {
+      .text_top1 p, .text_top2 p, .text_top3 p {
       margin: 0;
       font-size: 2.8rem;
       line-height: 0.85;
       letter-spacing: -2px;
-    }
+      }
 
-    .text_middle .icon_top p {
-    font-size: 2.5rem;
-    }
+      .text_middle .icon_top p {
+      font-size: 2.5rem;
+      }
 
-    #foot .img_footer {
-    width: 96%;
-    }
+      #foot .img_footer {
+      width: 96%;
+      }
 
-    #foot {
+      #foot {
       height: 34vh;
-    }
+      }
 
-    .marquefooter-r h1, .marquefooter-l h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    letter-spacing: -5px;
-    }
+      .marquefooter-r h1, .marquefooter-l h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      letter-spacing: -5px;
+      }
   }
 
     @media (max-width: 375px) {
