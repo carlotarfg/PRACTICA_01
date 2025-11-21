@@ -1183,163 +1183,7 @@ color: var(--primary-color);
 
 /* ------------ MEDIA QUERYS ------------ */
 
-@media (max-width: 375px) {
 
-    #work_with_us {
-        margin-top: 2rem;
-    }
-
-    .work_arrow img {
-        width: 2rem;
-        margin-right: 0rem;
-    }
-
-        .hello p {
-        margin-left: 10rem;
-        margin-bottom: 1rem;
-    }
-
-    .name p, .email p, .project p, .hello p {
-        font-size: 2.5rem;
-        letter-spacing: -2px;
-    }
-
-     .name input {
-        width: min(74rem, 94vw);
-    }
-
-    .email input {
-        width: min(55rem, 94vw);
-    }
-
-    .project input {
-        width: min(56rem, 94vw);
-    }
-
-    .name, .email, .project {
-        display: flex;
-        gap: 0rem;
-        flex-direction: column;
-        align-items: flex-start;
-        min-width: 0;
-    }
-    .name input, .email input, .project input {
-        height: 2rem;
-        font-size: 0.7rem;
-        margin-bottom: 1rem;
-    }
-
-    .form {
-        gap: 0rem;
-    }
-
-    .form_button {
-        font-size: 1.5rem;
-        letter-spacing: -1px;
-        width: 4.5rem;
-        padding: 0.5rem;
-    }
-
-    .marquefooter-r h1, .marquefooter-l h1 {
-        color: #1d1d1b2b;
-        font-size: 2rem;
-        font-weight: 300;
-        margin-top: 1rem;
-        white-space: nowrap;
-        letter-spacing: -3px;
-        padding: 0 2%;
-    }
-
-    #foot {
-        position: relative;
-        width: 100%;
-        height: 38vh;
-        padding: 2rem;
-        overflow: hidden;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        box-sizing: border-box;
-        margin-top: -1.5rem;
-    }
-
-    .text_top1 p, .text_top2 p, .text_top3 p {
-        margin: 0;
-        font-size: 2rem;
-        line-height: 0.85;
-        letter-spacing: -2px;
-    }
-
-    .text_top3 p span img {
-        width: 2.5rem;
-    }
-
-    .text_middle .icon_top p {
-        font-size: 2rem;
-        font-weight: 500;
-        letter-spacing: -1px;
-    }
-
-    .text_middle .icon_top img {
-        width: 1.5rem;
-        margin-top: -1.2rem;
-        height: auto;
-    }
-
-    .text_middle .icon_top {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-    }
-
-    .text_bottom ul {
-        list-style: none;
-        color: var(--third-color);
-        display: flex;
-        gap: 0.5rem;
-        margin: 0;
-        padding: 0;
-    }
-
-    .text_bottom {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        flex-wrap: nowrap;
-        width: 90.5%;
-        margin: 0rem 0rem 2rem 1rem;
-        font-size: 0.5rem;
-    }
-
-        .work_arrow img {
-        width: 1.5rem;
-        margin-right: 0rem;
-    }
-
-    #foot .top {
-        display: flex;
-        align-items: flex-start;
-        margin-top: -3rem;
-        gap: 5rem;
-    }
-
-        #foot .img_footer {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 93%;
-        margin-left: 1rem;
-        height: 100%;
-        z-index: 0;
-    }
-
-    .marquefooter-r {
-        margin-top: 3rem;
-        margin-bottom: -2rem;
-    }
-
-}
 
 @media (max-width: 499px) {
    
@@ -1735,5 +1579,189 @@ color: var(--primary-color);
     .text_bottom {
       width: 94.5%;
     }
+}
+
+@media (max-width: 375px) {
+
+  .logo {
+      width: 4rem;        
+      margin: 0rem 0rem 0rem -1rem;
+    }
+
+    .menu-toggle {
+    width: 5.5rem;
+    padding: 0.5rem;
+    margin-left: 1.5rem;
+    margin-bottom: 0.2rem;
+    font-size: 0.9em;
+    }
+
+    .navbar{
+      width: 9rem;
+      height: 8rem;
+      padding: 1.2rem;
+      left: clamp(1rem, 100vw - 10rem, 45rem);
+      top: -5rem;
+    }
+
+    .menu-mobile {
+      line-height: 0.2;
+      font-size: 1rem;
+    }
+
+    #work_with_us {
+        margin-top: 2rem;
+    }
+
+    .work_arrow img {
+        width: 2rem;
+        margin-right: 0rem;
+    }
+
+        .hello p {
+        margin-left: 10rem;
+        margin-bottom: 1rem;
+    }
+
+    .name p, .email p, .project p, .hello p {
+        font-size: 2.5rem;
+        letter-spacing: -2px;
+    }
+
+     .name input {
+        width: min(74rem, 94vw);
+    }
+
+    .email input {
+        width: min(55rem, 94vw);
+    }
+
+    .project input {
+        width: min(56rem, 94vw);
+    }
+
+    .name, .email, .project {
+        display: flex;
+        gap: 0rem;
+        flex-direction: column;
+        align-items: flex-start;
+        min-width: 0;
+    }
+    .name input, .email input, .project input {
+        height: 2rem;
+        font-size: 0.7rem;
+        margin-bottom: 1rem;
+    }
+
+    .form {
+        gap: 0rem;
+    }
+
+    .form_button {
+        font-size: 1.5rem;
+        letter-spacing: -1px;
+        width: 4.5rem;
+        padding: 0.5rem;
+    }
+
+    .marquefooter-r h1, .marquefooter-l h1 {
+        color: #1d1d1b2b;
+        font-size: 2rem;
+        font-weight: 300;
+        margin-top: 1rem;
+        white-space: nowrap;
+        letter-spacing: -3px;
+        padding: 0 2%;
+    }
+
+    #foot {
+        position: relative;
+        width: 100%;
+        height: 38vh;
+        padding: 2rem;
+        overflow: hidden;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+        margin-top: -1.5rem;
+    }
+
+    .text_top1 p, .text_top2 p, .text_top3 p {
+        margin: 0;
+        font-size: 2rem;
+        line-height: 0.85;
+        letter-spacing: -2px;
+    }
+
+    .text_top3 p span img {
+        width: 2.5rem;
+    }
+
+    .text_middle .icon_top p {
+        font-size: 2rem;
+        font-weight: 500;
+        letter-spacing: -1px;
+    }
+
+    .text_middle .icon_top img {
+        width: 1.5rem;
+        margin-top: -1.2rem;
+        height: auto;
+    }
+
+    .text_middle .icon_top {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .text_bottom ul {
+        list-style: none;
+        color: var(--third-color);
+        display: flex;
+        gap: 0.5rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .text_bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-wrap: nowrap;
+        width: 90.5%;
+        margin: 0rem 0rem 2rem 1rem;
+        font-size: 0.5rem;
+    }
+
+        .work_arrow img {
+        width: 1.5rem;
+        margin-right: 0rem;
+    }
+
+    #foot .top {
+        display: flex;
+        align-items: flex-start;
+        margin-top: -3rem;
+        gap: 5rem;
+    }
+
+        #foot .img_footer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 93%;
+        margin-left: 1rem;
+        height: 100%;
+        z-index: 0;
+    }
+
+    .marquefooter-r {
+        margin-top: 3rem;
+        margin-bottom: -2rem;
+    }
+
 }
 
