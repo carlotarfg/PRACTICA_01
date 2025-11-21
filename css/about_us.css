@@ -315,7 +315,18 @@ header {
   width: 2.8rem;
   margin-left: 0.6rem;
   transform: translateY(3px);
+  animation: girar 4s linear infinite; 
 }
+
+@keyframes girar {
+    from {
+        transform: translateY(3px) rotate(0deg);
+    }
+    to {
+        transform: translateY(3px) rotate(360deg);
+    }
+}
+
 
 .main-text {
   font-size: 3rem;
@@ -442,14 +453,14 @@ font-size: 2.3rem;
 
 #how_we_work img {
   position: absolute;
-  left: -5rem;       
-  top: 50%;           
-  transform: translateY(-50%) rotate(-15deg); 
-  width: 20rem;      
+  left: -8rem;
+  top: 55%;
+  transform: translateY(-50%) rotate(-15deg);
+  width: 25rem;
   height: auto;
-  z-index: 0;        
-  opacity: 0.3;       
-  pointer-events: none; 
+  z-index: 0;
+  opacity: 0.3;
+  pointer-events: none;
 }
 
 #how_we_work > *:not(img) {

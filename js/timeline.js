@@ -88,3 +88,26 @@ function updateTimeline() {
 // Ejecutar al cargar y al hacer scroll
 window.addEventListener('scroll', updateTimeline);
 window.addEventListener('load', updateTimeline);
+
+// ------------- icono que gira
+
+document.addEventListener("DOMContentLoaded", function () {
+  const img = document.querySelector("#how_we_work img");
+  let lastScrollY = window.scrollY;
+  let currentRotation = -15; // Grados iniciales
+
+  window.addEventListener("scroll", () => {
+    const scrollY = window.scrollY;
+    const delta = scrollY - lastScrollY;
+
+    // Ajusta la velocidad de giro (ajusta 0.05 según necesidad)
+    currentRotation += delta * 0.05;
+
+    // Limita el rango de giro si lo deseas (opcional)
+    // currentRotation = Math.max(-45, Math.min(45, currentRotation));
+
+    img.style.transform = `translateY(-50%) rotate(${currentRotation}deg)`;
+
+    lastScrollY = scrollY;
+  });
+});
