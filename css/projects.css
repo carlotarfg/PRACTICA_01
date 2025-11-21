@@ -1840,23 +1840,22 @@ margin: 6rem 0 19rem 0;
     }
 
     .text1 p {
-        font-size: 1.1rem;
-        transform: translateX(4rem);
-        width: min(62rem, 64vw);
+        font-size: 1rem;
+        transform: translateX(5rem);
+        width: min(68rem, 59vw);
         margin: 12rem 0 10rem 0rem;
     }
 
     .text2 p, .text3 P {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
-        .text2 p {
-        width: min(43rem, 67vw);
+     .text2 p {
+        width: min(42rem, 57vw);
         margin: 8rem 0 2rem 0;
     }
-
-        .text3 p {
-        width: min(43rem, 65vw);
+       .text3 p {
+        width: min(43rem, 59vw);
         margin: 6rem 0 10rem 0;
     }
 
