@@ -1198,6 +1198,18 @@ margin: 6rem 0 19rem 0;
 
           /* -------------  */
 
+          .img-side {
+            height: 330px;
+          }
+
+          .img-top {
+            height: 450px;
+          }
+
+          .img-four {
+            height: 240px;
+            }
+
           .header_arrow img {
               width: 8rem;
               margin-bottom: -4rem;
@@ -1815,6 +1827,17 @@ margin: 6rem 0 19rem 0;
     }
 
     /* ---------- */
+
+    .img-top {
+    height: 230px;
+}
+.img-side {
+    height: 160px;
+}
+
+.img-four {
+    height: 120px;
+}
 
         .header_arrow img {
         width: 5rem;
