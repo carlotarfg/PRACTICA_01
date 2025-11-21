@@ -403,6 +403,7 @@ font-size: 2.3rem;
   flex-direction: column;
   align-items: flex-end;
   line-height: 0.6;
+  margin-left: 4rem;
 }
 
 .textito p {
@@ -428,6 +429,97 @@ font-size: 2.3rem;
 /* HOW WE WORK */
 
 #how_we_work {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  z-index: 10;
+  margin-right: 5rem;
+  padding: 2rem 0;
+  position: relative; 
+  min-height: 20rem; 
+}
+
+#how_we_work img {
+  position: absolute;
+  left: -5rem;       
+  top: 50%;           
+  transform: translateY(-50%) rotate(-15deg); 
+  width: 20rem;      
+  height: auto;
+  z-index: 0;        
+  opacity: 0.3;       
+  pointer-events: none; 
+}
+
+#how_we_work > *:not(img) {
+  position: relative; 
+  z-index: 2;
+}
+
+#how_we_work h1 {
+  font-size: 7rem;
+  margin: 0;
+}
+
+#how_we_work .text2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.2;
+  max-width: 30rem;
+}
+
+#how_we_work .text2 p {
+  font-size: 2rem;
+  color: #bfbfbf;
+  margin: 0.2rem 0;
+}
+
+#atom-icon-bg {
+  position: fixed;     
+  left: -10rem;        
+  top: 50%;
+  transform: translateY(-50%) rotate(-15deg);
+  width: 15rem;
+  height: auto;
+  z-index: 0;
+  opacity: 0.2;
+  pointer-events: none; 
+}
+
+#how_we_work {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  z-index: 10;
+  margin-right: 5rem;
+  padding: 2rem 0;
+  position: relative; 
+}
+
+#how_we_work h1 {
+  font-size: 7rem;
+  margin: 0;
+}
+
+#how_we_work .text2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.2;
+  max-width: 30rem;
+}
+
+#how_we_work .text2 p {
+  font-size: 2rem;
+  color: #bfbfbf;
+  margin: 0.2rem 0;
+}
+
+
+#how_we_work {
   top: 52%;          
   display: flex;
   flex-direction: column;
@@ -447,7 +539,7 @@ font-size: 2.3rem;
   flex-direction: column;
   align-items: center;
   align-items: flex-end;
-  margin-right: 12rem;
+  /* margin-right: 12rem; */
   line-height: 0.6;
 }
 
@@ -455,21 +547,25 @@ font-size: 2.3rem;
 font-size: 2rem;
 color: #bfbfbf;
 
+
+
+
+/* TIMELINE */
+
+
 }
-
-
 .timeline {
   color: var(--second-color);
   display: flex;
   justify-content: space-between;
   position: relative;
-  padding: 3rem 0;
+  padding: 4rem 0; 
   margin: 3rem 1.5rem;
 }
 
 .timeline .line {
   position: absolute;
-  top: 38%;
+  top: 50%;
   left: 0;
   height: 0.15rem;
   width: 0;
@@ -496,156 +592,111 @@ color: #bfbfbf;
   transform: translateY(0);
 }
 
-/* ESTRELLAS */
-.star {
-  font-size: 2.8rem;
-  line-height: 1;
-  margin-bottom: 0.8rem;
+/* CONTENEDOR DE ESTRELLA Y TEXTO  */
+.step .star-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 8rem; 
 }
 
-/* TEXTOS */
+.star {
+  font-size: 3rem;
+  margin: 0;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
 .step p {
   font-size: 1.8rem;
   text-align: center;
   margin: 0;
   max-width: 7rem;
+  line-height: 0.9;
+  word-wrap: break-word;
 }
 
-/* TOP Y BOTTOM SIN TRANSFORMS GRANDES */
-.step.top p {
-  margin-top: -2.5rem;
-}
+/* Texto debajo de la estrella (bottom) */
 .step.bottom p {
-  margin-top: 0.5rem;
+  margin-top: 7rem; 
+  line-height: 0.9;
+  
+
 }
+
+/* Texto encima de la estrella (top) */
+.step.top p {
+  line-height: 0.9;
+margin-bottom: 6rem; 
+}
+
+/* RESPONSIVE */
 
 @media (max-width: 768px) {
   .timeline {
     margin: 2rem 1rem;
     gap: 1rem;
+    padding: 3rem 0;
+  }
+
+  .step .star-container {
+    height: 6rem; 
   }
 
   .star {
-    font-size: 2.2rem;      /* antes 3rem */
-    transform: translateY(50%); /* igual que tu diseño original */
-  }
-
-  .step.top p {
-    font-size: 1.4rem; 
-    transform: translateY(-2.5rem); /* menos distancia para no chocar */
-  }
-
-  .step.bottom p {
-    font-size: 1.4rem; 
-    transform: translateY(0.5rem);
+    font-size: 2.2rem;
+    transform: translate(-50%, -50%);
   }
 
   .step p {
-    line-height: 1.1;  /* reduce altura vertical */
-    max-width: 80px;   /* fuerza salto en 2 líneas si hace falta */
+    font-size: 1.4rem;
+    max-width: 80px;
+    line-height: 1.2;
+  }
+
+  .step.bottom p {
+    margin-top: 1.5rem;
+  }
+  .step.top p {
+    margin-bottom: 1.5rem;
   }
 }
 
-
 @media (max-width: 480px) {
+  .step .star-container {
+    height: 5rem;
+  }
+
   .star {
     font-size: 1.8rem;
   }
 
-  .step.top p,
-  .step.bottom p {
-    font-size: 1.2rem;
-  }
-
   .step p {
+    font-size: 1.2rem;
     max-width: 60px;
+    line-height: 1.1;
+  }
+
+  .step.bottom p {
+    margin-top: 1rem;
+  }
+  .step.top p {
+    margin-bottom: 1rem;
   }
 }
 
 
-/* .timeline {
-  color: var(--second-color);
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  padding: 3rem 0;
-  margin: 3rem;
-}
 
-.line {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  height: 0.15rem;
-  width: 0%; /* empieza desde 0 y se expande 
-  background: var(--second-color);
-  transform: translateY(-50%);
-  z-index: 1;
-  transition: width 0.5s linear;
-}
 
-.timeline::before {
-content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 0; 
-  height: 0.15rem;
-  background: var(--second-color);
-  transform: translateY(-50%);
-  z-index: 1;
-  transition: width 0.5s linear;
-}
-
-.step {
-  position: relative;
-  z-index: 2;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;  
-   opacity: 0; 
-  transform: translateY(20px); 
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.step.show {
- opacity: 1; 
-  transform: translateY(0); 
-}
-
-.star {
-  font-weight: 500;
-  font-size: 3rem;
-  line-height: 1;
-  color: var(--second-color);
-  transform: translateY(70%);
-} 
-
-.step.top p {
-  transform: translateY(-4rem);
-  margin: 0;
-  font-size: 2rem;
-}
-
-.step.bottom p {
-  transform: translateY(1rem);
-  margin: 0;
-  font-size: 2rem;
+.text3 {
+    margin-left: 4rem;
 
 }
-
-.step p {
-  font-size: 1rem;
-  color: var(--second-color);
-  text-align: center;    
-  max-width: 6rem;
-} 
-
-*/
-
-
-
 
 .text3 p {
   font-size: 2.5rem;
@@ -657,7 +708,119 @@ content: "";
 
 
 
-/* FOOTER  */
+
+/* WORK WITH US  */
+
+
+#work_with_us {
+  background-color: var(--second-color);
+  margin-top: 60rem;
+  color: var(--primary-color);
+}
+
+#work_with_us p {
+color: var(--primary-color);
+}
+
+.title_work {
+  display: flex;
+  flex-direction: row;
+  font-weight: 500;
+  letter-spacing: -5px;
+  gap: 2rem;
+  font-size: 8rem;
+  margin: 10rem 0rem 6rem 13rem;
+  justify-content: flex-end;
+}
+
+
+.work_arrow img {
+  width: 8rem;
+  margin-right: 2rem;
+  margin-top: -0.8rem;
+}
+
+.form {
+  display: flex;
+  letter-spacing: -5px;
+  gap: 1rem;
+  line-height: 0.8;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+.name, .email, .project {
+  display: flex;
+  gap: 2rem;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.name p, .email p, .project p, .hello p {
+  color: var(--primary-color);
+  font-size: 8rem;
+  margin-bottom: 0rem;
+}
+
+.hello p {
+  margin-left: 39rem;
+}
+
+.name input, .email input, .project input {
+  background-color: transparent;
+  height: 7rem;
+  text-align: center;
+  font-size: 2rem;
+  border: 0px;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.name input {
+  width: 74rem;
+}
+
+.email input {
+  width: 55rem;
+}
+
+.project input {
+  width: 56rem;
+}
+
+.form_button {
+  font-size: 3rem;
+  margin: 4rem 0rem 3rem 80rem;
+  color: var(--second-color);
+  padding: 1rem;
+  width: 9rem;
+  letter-spacing: -2px;
+  border-radius: 0.5rem;
+  background-color: var(--primary-color);
+  text-decoration: none;
+}
+
+.form input {
+  color: var(--primary-color) !important;
+}
+
+.form input::placeholder {
+  color: #bfbfbf !important; 
+}
+
+.form input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+/* ------------ FOOTER ------------ */
 
 /* MARQUEE  */
 
@@ -862,6 +1025,17 @@ content: "";
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 /* ------------ MEDIA QUERYS ------------ */
 
 @media (max-width: 576px) {
@@ -917,10 +1091,6 @@ content: "";
 }
 
 
-@media (max-width: 768px) {
-
-}
-
 
 @media (max-width: 992px) {
 
@@ -959,15 +1129,13 @@ content: "";
   width: 60%;  
 }
 
+.purple {
+  font-size: 1.8rem;
+}
+
+#how_we_work .text2 p {
+  font-size: 1.5rem;
+}
 
 }
 
-
-@media (max-width: 1200px) {
-
-}
-
-
-@media (min-width: 1400px) {
-
-}
