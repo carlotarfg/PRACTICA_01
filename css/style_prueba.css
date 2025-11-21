@@ -2001,14 +2001,14 @@ transition: transform 0.6s cubic-bezier(0.22, 0.61, 0.36, 1),
         text-align: left;
         letter-spacing: -2px;
     }
-.in {
-    display: flex;
-    flex-direction: row;
-    gap: 4rem;
-    align-items: center;
-}
+    .in {
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+        align-items: center;
+    }
 
-        .five {
+    .five {
         display: flex;
         flex-direction: row;
         margin-left: 2rem;
@@ -2017,7 +2017,7 @@ transition: transform 0.6s cubic-bezier(0.22, 0.61, 0.36, 1),
         flex-wrap: wrap;
     }
 
-        .review {
+    .review {
         font-size: 0.8rem;
         line-height: 1.2;
         letter-spacing: -0.5px;
@@ -2044,11 +2044,11 @@ transition: transform 0.6s cubic-bezier(0.22, 0.61, 0.36, 1),
         margin: 0;
     }
     
-        .opinion1 {
+    .opinion1 {
         transform: rotate(-5deg);
     }
 
-        .marquefooter-r h1, .marquefooter-l h1 {
+    .marquefooter-r h1, .marquefooter-l h1 {
         color: #1d1d1b2b;
         font-size: 2rem;
         font-weight: 300;
@@ -2058,7 +2058,7 @@ transition: transform 0.6s cubic-bezier(0.22, 0.61, 0.36, 1),
         padding: 0 2%;
     }
 
-        #foot {
+    #foot {
         position: relative;
         width: 100%;
         height: 38vh;
@@ -2072,7 +2072,7 @@ transition: transform 0.6s cubic-bezier(0.22, 0.61, 0.36, 1),
         margin-top: -1.5rem;
     }
 
-        .text_top1 p, .text_top2 p, .text_top3 p {
+    .text_top1 p, .text_top2 p, .text_top3 p {
         margin: 0;
         font-size: 2rem;
         line-height: 0.85;
@@ -2083,32 +2083,32 @@ transition: transform 0.6s cubic-bezier(0.22, 0.61, 0.36, 1),
         width: 2.5rem;
     }
 
-        .text_middle .icon_top p {
+    .text_middle .icon_top p {
         font-size: 2rem;
         font-weight: 500;
         letter-spacing: -1px;
     }
 
-         .text_middle .icon_top img {
+    .text_middle .icon_top img {
         width: 1.5rem;
         margin-top: -1.2rem;
         height: auto;
     }
 
     .text_middle .icon_top {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
 
-.text_bottom ul {
-    list-style: none;
-    color: var(--third-color);
-    display: flex;
-    gap: 0.5rem;
-    margin: 0;
-    padding: 0;
-}
+    .text_bottom ul {
+        list-style: none;
+        color: var(--third-color);
+        display: flex;
+        gap: 0.5rem;
+        margin: 0;
+        padding: 0;
+    }
 
     .text_bottom {
         display: flex;
@@ -2143,9 +2143,9 @@ transition: transform 0.6s cubic-bezier(0.22, 0.61, 0.36, 1),
     }
 
     .marquefooter-r {
-    margin-top: 3rem;
-    margin-bottom: -2rem;
-}
+        margin-top: 3rem;
+        margin-bottom: -2rem;
+    }
 
     
 }
