@@ -2144,7 +2144,6 @@ transition: transform 0.6s cubic-bezier(0.22, 0.61, 0.36, 1),
     }
 
     .marquefooter-r h1, .marquefooter-l h1 {
-        color: #1d1d1b2b;
         font-size: 5rem;
         font-weight: 300;
         white-space: nowrap;
